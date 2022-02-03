@@ -30,8 +30,8 @@
   }
 }
 
-@media only screen and (min-width: 410px) {
+@media only screen and (max-height: 800px) {
   .mt-nav {
-    margin-top: 0rem;
+    margin-top: 5.5rem;
   }
 }
