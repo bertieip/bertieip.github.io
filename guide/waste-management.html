@@ -63,7 +63,7 @@
     <header class="header text-white bg-dark pt-9 pb-5" style="background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);">
       <!-- <header class="header text-white" style="background-image: url(../assets/img/video/tree.jpg)" data-overlay="7"> -->
       <div class="container">
-        <h3 id="top">Onboarding Guide: Facilities</h3>
+        <h3 id="top">Onboarding Guide: Waste Management</h3>
       </div>
     </header><!-- /.header -->
 
@@ -88,17 +88,59 @@
 
               <h3 id="getting-started">Getting Started</h3>
                   <p>
-                    You have been selected as the data holder for facilities. As such, we need you to complete the template we have provided.</p>
+                    You have been selected as the data holder for Waste Management in the office. As such, we need you to complete the template we have provided.</p>
                     <p>This guide will help you to complete the data into the format needed to build this part of the company impact.
                   </p>
 
               <hr class="my-8">
 
               <h3 id="finding-data">Finding and Requesting Data</h3>
-              <p>We refer to the Facilities Management team in this page, but depending on the size of the building, this may just be your landlord, or one of the team members. Ultimately, its the person who controls the heat and electricity in the building!
+              <p>Waste Management is usually handled by an external company, and they quite often track waste very accurately. As such, if you use a supplier like First Mile then you may be able to access very accurate data. You can use the template below to request this information, or else you may be able to log-in to an online platform if this is provided.</p>
+              <div class="accordion accordion-light" id="accordion-3">
+
+                <div class="card">
+                  <p class="card-title">
+                    <a class="collapsed" data-toggle="collapse" href="#collapse-3-2"><span class="badge badge-pale badge-primary">Template</span> If you need to request the data you can use the following email template. Simply copy and paste into your email client and delete sections as appropriate.</a>
+                  </p>
+
+                  <div id="collapse-3-2" class="collapse" data-parent="#accordion-3">
+                    <div class="card-body">
+                      <p>Dear [data holder],
+                        <br>
+                        We're undertaking an analysis of our carbon impact and need some information about our office.<br>
+                        If you could provide me the following information for the period of [start date to end date], I'd be grateful:<br>
+                        <h6>General Waste</h6>
+                        <ul>
+                            <li><b>Usage: </b>The total waste in kg for each month</li>
+                            <li><b>Handled Method: </b>Whether this goes to Landfill, Energy-from-Waste facilties, or is handled with another method?</li>
+                        </ul>
+                        <h6>Recycling</h6>
+                        <ul>
+                          <li><b>Usage: </b>The total recycling in kg for each month</li>
+                        </ul>
+                        <h6>Organic Waste</h6>
+                        <ul>
+                          <li><b>Usage: </b>The total waste in kg for each month</li>
+                          <li><b>Handled Method: </b>Whether this goes to Landfill, Anaerobic Digestion facilities, or is handled with another method?</li>
+                        </ul>
+                        Many thanks, and please let me know if you have any questions!</p>
+                    </div>
+                  </div>
+                </div>
 
 
-                <h6 id="update-to-2">Electricity</h6>
+
+              </div>
+              <br>
+              <p>If this isn't possible, then you have two options:
+                <ol>
+                  <li><b>A weekly tracking exercise:</b> In this case you can track waste for a week and then use this for the whole year. To do this, you need to keep a tally of how much waste/recycling is removed during the week.</li>
+                  <li><b>An estimation:</b> Alternatively, you can simply <code>Unknown? = TRUE</code> for that office location. </li>
+                </ol>
+              <p>In general, we are asking you to build a picture of your consumption rather than needing surgical precision.</p>.
+
+
+                <!-- <h6 id="update-to-2">Employee Count</h6>
                 <p>Electricity is provided directly as a utility bill to the bill payer. This will come on a traditional utility bill (typically via a PDF). This bill will contain monthly usage data, the supplier, the tariff, and whether the tariff is low-carbon or not (typically referred to as renewable, green, or low-carbon).</p>
                 <p>Typically, this monthly usage will be collected by the Facilities Management team in your building so that you don't have to deal with these directly. If you don't get sent this directly, you can ask your Facilities Management team. </p>
                 <p>Larger offices will tend to break this down on a space basis (i.e. room or floor), and data will be available on request</p>
@@ -119,54 +161,13 @@
 
 
 
-                <br>
+                <br -->
 
 
 
-                        <p> </p>
-
-                        <div class="accordion accordion-light" id="accordion-3">
-
-                          <div class="card">
-                            <p class="card-title">
-                              <a class="collapsed" data-toggle="collapse" href="#collapse-3-2"><span class="badge badge-pale badge-primary">Template</span> If you need to request the data you can use the following email template. Simply copy and paste into your email client and delete sections as appropriate.</a>
-                            </p>
-
-                            <div id="collapse-3-2" class="collapse" data-parent="#accordion-3">
-                              <div class="card-body">
-                                <p>Dear [data holder],
-                                  <br>
-                                  We're undertaking an analysis of our carbon impact and need some information about our office.<br>
-                                  If you could provide me the following information for the period of [start date to end date], I'd be grateful:<br>
-                                  <h6>Electricity</h6>
-                                  <ul>
-                                      <li><b>Usage: </b>The total use in kWh for each month</li>
-                                      <li><b>Supplier: </b>Which company supplies the electricity i.e. EDF or British Gas</li>
-                                      <li><b>Tariff: </b>If the tariff is a renewable/green/low-carbon tariff or not</li>
-                                  </ul>
-                                  <h6>Heating</h6>
-                                  <ul>
-                                      <li><b>Type: </b>Whether this is provided by boilers, purchased heat, or via a VRV/VRF system</li>
-                                      <li><b>Usage: </b>The total use in kWh/litres for each month (if applicable)</li>
-                                  </ul>
-                                  <h6>Water</h6>
-                                  <ul>
-                                      <li><b>Usage: </b>The total use in m3/litres for each month</li>
-                                  </ul>
-                                  <h6>Refrigerants</h6>
-                                  <ul>
-                                      <li><b>Type: </b>Which refrigerant is used i.e. R404, R410a etc</li>
-                                      <li><b>Top-ups/leaks: </b>If the system was topped up, then how many kg of refrigerant was used</li>
-
-                                  </ul>
-                                  Many thanks, and please let me know if you have any questions!</p>
-                              </div>
-                            </div>
-                          </div>
 
 
 
-                        </div>
 
 
 
@@ -175,11 +176,11 @@
               <h3 id="template">Completing Data Template</h3>
 
               <div class="text-center my-6">
-                <a href="../assets/img/guide/facilities.png" data-provide="lightbox">
-                  <img class="rounded-md" src="../assets/img/guide/facilities.png" alt="">
+                <a href="../assets/img/guide/template.png" data-provide="lightbox">
+                  <img class="rounded-md" src="../assets/img/guide/template.png" alt="">
 
                   </a>
-                <footer>The Facilities Template</footer>
+                <footer>The Waste Management Template</footer>
               </div>
 
 
@@ -203,32 +204,20 @@
                 <br>
 
 
-                  <h4 id="extended-license" data-provide="anchor">Usage Data</h4>
-                  <p>The locations and addresses will copy over automatically to the location columns. All you need to do is fill in the usage data and the supplementary data associated with it.</p>
-                  <h5>Electricity</h5>
+                  <h4 id="extended-license" data-provide="anchor">Waste Management Data</h4>
+                  <p>The locations and addresses will copy over automatically into the <code>Office Location</code> column. All you need to do is fill in the usage data and the supplementary data associated with it.</p>
+
+                  <p>For each item type, enter the units of waste creation during each month in question, for each office location. If information is unknown for any location you can select <code>Unknown? = TRUE</code> for that office location.
+
+                  <p>For each type, you can also enter the <code>Main Supplier</code> if known. This gives us information on the status of your Environmentally Preferred Purchasing strategy.
+
                   <p><ul>
-                    <li><b>Supplier:</b> This is the supplier of your electricity i.e. British Gas, EDF Energy, EON, Npower, Scottish Power and SSE </li>
-                    <li><b>Tariff:</b> This is the specific tariff type. For example, EDF's Natural Renewable Tariff </li>
-                    <li><b>Low Carbon Tariff:</b> Some electricity is low-carbon/renewable/green. As such you can select <code>Yes</code>/<code>No</code>/<code>Unknown</code> to reflect this.</li>
+                    <li><b>General Waste:</b> This is waste that goes in the trash. It either ends up at landfill (yuk!) or goes to an Energy-from-Waste facility. Your Facilities Management Team will be able to give you details of the contractor who holds this information.</li>
+                    <li><b>Recycling:</b> This is waste that is re-used, typically in a closed-loop (turned back into the same thing).</li>
+                    <li><b>Food and Organic Waste:</b> Organic waste is important because if it goes to landfill it emits huge amounts of methane, so it is preferable to handle it via an anerobic digestion facility.</li>
                   </ul>
+
                   </p>
-                  <h5>Heating</h5>
-                  <p><ul>
-                    <li><b>Exists:</b> As some buildings are heated by electricity of VRV systems, they won't be included in the heating section. Select <code>No</code> if this is the case </li>
-                    <li><b>Type:</b> If heating systems exist as separate entity then select <code>Gas</code> or <code>District Heating</code> here. </li>
-                    <li><b>Low Carbon Gas:</b> Some gas providers allow users to offset their gas at point of use. As such you can select <code>Yes</code>/<code>No</code>/<code>Unknown</code> to reflect this.</li>
-                  </p>
-                </ul>
-                <h5>Water</h5>
-                <p><ul>
-                  <li><b>Unknown:</b> Water data can be hard to access. If this is the case, we can use benchmark data to predict water use over the year. If data is unavailable then select <code>TRUE</code> in the dropdown. If you know the data select <code>FALSE</code> (or leave blank) and complete the water usage data. </li>
-                </p>
-              </ul>
-              <h5>Refrigerants</h5>
-              <p><ul>
-                <li><b>Type:</b> Select the type from the dropdown options given. If other, please note this in the <i>If other</i> column </li>
-              </p>
-            </ul>
 
 
 
@@ -237,25 +226,10 @@
               <h3 id="faq">Frequently Asked Questions</h3>
 
                   <br>
-                  <h6 id="regular-license" data-provide="anchor">What if I don't know the data?</h6>
-                  <p>If the data isn't available we can use benchmark data to fill in the gaps. We would expect this data to be available for most organisations.</p>
-
-                  <h6 id="regular-license" data-provide="anchor">What if we work in a co-working Space like a WeWork or similar?</h6>
-                  <p>In this instance, we can speak directly to the building or facilities management through the office manager. Please put us in touch with office management.</p>
-
-                  <h6 id="extended-license" data-provide="anchor">What if my data isn't from the 1st of the month to the end of the month?</h6>
-                  <p>Billing cycles vary, but we ask you to use the data that best corresponds to the month in question. This is typically based on which month the majority of the billing cycle falls into. If the billing cycle happens to be exactly half-way through the month, please use the lower half of the bill to decide the date. </p>
-
-                  <h6 id="extended-license" data-provide="anchor">What happens if my data is only available on a quarterly/bi-annual/annual basis?</h6>
-                  <p>In this instance, we would ask you to split it by the number of months the data is for:
-                    <ul>
-                      <li>Quarterly: split the data by 3 and add equally into each month</li>
-                      <li>Bi-annual: split the data by 6 and add equally into each month</li>
-                      <li>Annual: split the data by 12 and add equally into each month</li>
-                    </ul>
-
-
-                  </p>
+                  <h6 id="regular-license" data-provide="anchor">What if we're in a WeWork or similar?</h6>
+                  <p>You should ask the management who handles waste in the building because this will give some information about what happens to the waste.<p>
+                  <p>For the values we recommend using a standard value of 1kg per person per day for recyling and waste, and 0.5 kg for organic/food waste. This is likely an overestimation, but gives the company a benchmark to make future improvements.<p>
+                  <p>As always, please get in touch if you need a hand!</p>
 
 
 
