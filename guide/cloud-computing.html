@@ -64,7 +64,7 @@
     <header class="header text-white bg-dark pt-9 pb-5" style="background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);">
       <!-- <header class="header text-white" style="background-image: url(../assets/img/video/tree.jpg)" data-overlay="7"> -->
       <div class="container">
-        <h3 id="top">Onboarding Guide: Expense Data</h3>
+        <h3 id="top">Onboarding Guide: Cloud Computing Data</h3>
       </div>
     </header><!-- /.header -->
 
@@ -89,17 +89,16 @@
 
               <h3 id="getting-started">Getting Started</h3>
                   <p>
-                    You have been selected as the data holder for Expense Data. As such, we need you to upload the expenses so that we can analyse the data.</p>
+                    You have been selected as the data holder for Cloud Computing Data. As such, we need you to upload the expenses so that we can analyse the data.</p>
                     <p>This guide will help you to complete the data into the format needed to build this part of the company impact.
                   </p>
 
               <hr class="my-8">
 
               <h3 id="finding-data">Finding and Requesting Data</h3>
-              <p>Typically expenses should be available as a direct download or export from an expense software. </p>
-              <p>Please complete this through a direct .xls extraction from your CRM or Expense System.</p>
-              <p>Data should be on a line-by-line basis per transaction. </p>
-              <p>The more descriptions per expense item the better it is for the analysis. </p>
+              <p>Typically most data can be downloaded directly from your cloud provider.</p>
+              <p>The most important information is monthly uptime, and location of the servers.</p>
+              <p>We are referring to Infrastructure-as-a-Service (IaaS) rather than consumer items like a website, Sharepoint, or Google Drive etc. </p>
 
                 <!-- <p>We've listed how to export this data here:</p>
 
@@ -242,27 +241,30 @@
                   <h5>Progress Data</h5>
                   <p>
                     <ul>
-                    <li><b>Progress: </b>here you can track the progress of the data collection</li>
                     <li><b>Completed By: </b>Once this data has been completed, add your email and completion data so that we can ask any questions upon verfication.</li>
+                  </ul>
+                  </p>
+
+                  <h5>Service Provider   Data</h5>
+                  <p>
+                    <ul>
+                    <li><b>Cloud Computing Provider: </b>Please use the dropdowns to select which cloud computing provider the company uses. Typically this is one of <code>AWS</code> (Amazon Web services), <code>GCP</code> (Google Cloud Compute), <code>Azure</code> (Microsoft Azure). It may also be another such as Rackspace, AliCloud, or IBM, but these are rarer. Please enter the provider name next to this box if it is categorised as <code>Other</code>. </li>
                   </ul>
                   </p>
                 <br>
 
 
-                  <h4 id="extended-license" data-provide="anchor">Expense Data</h4>
-                  <p>This guide will walk you through the information we require from the expenses</p>
+                  <h4 id="extended-license" data-provide="anchor">Uptime Data</h4>
+                  <p>For each provider, we need data on the location and the uptime:</p>
+                  This information is available as a direct download from the admin console of your cloud provider.
                   <p><ul>
-                    <li><b>Expense Reference:</b> Simply identifier from your expense system e.g. 00001</li>
-                    <li><b>Account Category:</b> Usually your cost centre e.g. Sales Team, or HR</li>
-                    <li><b>Employee Name:</b> Helps us to ask further questions if required</li>
-                    <li><b>Date of Purchase:</b> The transation date.</li>
-                    <li><b>Expense Description:</b> A plaintext description of the item e.g. "lunch at Pizza Express for 4 people"</li>
-                    <li><b>Expense Category 1:</b> The top level categorisation</li>
-                    <li><b>Expense Category 1:</b> A supplementary category.</li>
-                    <li><b>Supplier Name:</b> The supplier e.g. British Airways.</li>
-                    <li><b>Debit (GBP)</b> The total spend.</li>
-                    <li><b>Credit (GBP):</b> The total credit if a refund etc.</li>
-                    <li><b>Net (GBP):</b> Total cost (positive or negative)</li>
+                    <li><b>Server Location:</b> this is the region that the server is located. This is important because different regions use electricity provided by different methods, and this has a significant impact on the overall intensity of these services.
+                      <br>- For <code>AWS</code> this will be similar to us-east-2, us-east-1, eu-west-1, or eu-west-2.
+                      <br>- For <code>GCP</code> this will be similar to europe-north1, europe-west1, europe-west2, northamerica-northeast1, us-central1, or us-west1
+                      <br>- For <code>Azure</code> this will be similar to centralus, northeurope, westeurope, westus2, francesouth
+                    </li>
+                    <li><b>Monthly Uptime:</b> This the the number of hours that the infrastructure is running per month during the period of analysis</li>
+
                   </ul>
                   </p>
 
@@ -274,10 +276,10 @@
               <h3 id="faq">Frequently Asked Questions</h3>
 
                   <br>
-                  <h6 id="regular-license" data-provide="anchor">What if I don't know the data?</h6>
-                  <p>Expense data is crucial for the analysis to take place. Without spend data, there is no way to quantify the material impact of the company over the year. That being said, there is also no way to do traditional financial accounting without this spend data being tracked! Therefore, every single organisation needs this data for accounting purposes, and so it should be available within the company.</p>
+                  <h6 id="regular-license" data-provide="anchor">What if my provider allows me to export the impact data directly?</h6>
+                  <p>Recently, several providers have provided the ability to export Cloud Footprint data directly. If this is the case, then please provide this directly.</p>
 
-                
+
 
 
 
