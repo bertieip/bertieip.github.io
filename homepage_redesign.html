@@ -52,7 +52,7 @@
             <!--a class="nav-link" href="partners.html">United Nations</a-->
             <a class="nav-link" href="blog.html">Blog</a>
             <a class="nav-link" href="careers.html">Careers</a>
-            <a class="btn btn-round btn-danger h-80 align-self-center" href="mailto:hello@alectro.io?Subject=Alectro" target="_blank">Get in touch</a>
+            <a class="btn btn-round text-white btn-danger h-80 align-self-center" type="button" data-toggle="modal" data-target="#modal-subscribe-2">Get in Touch 🌍</a>
           </nav>
         </section>
 
@@ -81,17 +81,21 @@
 
 
 
-    <header class="header text-white h-fullscreen pb-0 overflow-hidden" style="background-image: url(../assets/img/vector/16.png); background-color: #262a37;">
-      <div class="overlay opacity-95" style="background-image: linear-gradient(135deg, #5263FF 0%, #52FFEE 100%);"></div>
+    <header class="header text-white h-fullscreen pb-0 overflow-hidden" style="background-image: linear-gradient(135deg, #5263FF 0%, #52FFEE 100%); background-color: #262a37;">
+      <canvas class="constellation postion-static" data-radius="10"></canvas>
+      <!-- <div class="overlay opacity-95" style="background-image: linear-gradient(135deg, #5263FF 0%, #52FFEE 100%);"></div> -->
 
             <div class="container-fluid text-center">
               <div class="row align-items-center h-100">
 
-                <div class="col-md-4 mx-auto text-left">
+                  <div class="col-md-4 mx-auto text-left">
                       <h1 class="display-5 fw-700">Elegant and verifiable emission insight for positive <span class="text-alectro" data-type-speed="100" data-typing="businesses, institutions, events, societies"></span></span>.</h1>
                       <p class=>Use Alectro to understand, communicate and improve your business footprint. Become a carbon neutral organisation now.</p>
+                      <a class="btn btn-lg btn-round btn-danger" type="button" data-toggle="modal" data-target="#modal-subscribe-2">Get in Touch 🌍</a>
+                      <a class="btn btn-lg btn-round btn-secondary" href="#section-features">Features →</a>
+                    </p>
 
-                      <div class="container bg-dark text-center rounded p-5 opacity-70 fw-700">
+                      <!-- <div class="container bg-dark text-center rounded p-5 opacity-70 fw-700">
                         <div class="fluid-container align-items-center h-100">
 
                         <div class="text-center">
@@ -110,240 +114,269 @@
                             </form>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
 
 
 
                 <div class="col-md-6 col-sm-12 mt-md-0">
-                  <img src="assets/img/preview/1_overview.png" alt="..." class="aos-init aos-animate">
+                  <img src="assets/img/preview/website-header-v2.png" alt="..." class="aos-init aos-animate">
                 </div>
-
               </div>
             </div>
-
-
     </header>
-
-
-
-
 
     <!-- Main Content -->
     <main class="main-content">
 
-
-      <!--
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Populate the page
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      !-->
-
-      <!-- Process -->
-      <section class="section" id="section-process">
-          <div class="container">
-            <header class="section-header">
-              <h2>Our Process</h2>
-              <hr>
-              <p class="lead">Introducing the <strong>Virtual Sustainability Officer</strong>.<br>
-                We're really proud of all the work we do, and the processes that we have developed. Now, we want to share it all with you.
-                We've streamlined all of the processes for you so that we can deliver a full sustainability strategy with you effectively and efficiently.</p>
-            </header>
+      <section class="section" id="section-features">
+        <div class="container">
+          <header class="section-header">
+            <h2>The Virtual Sustainability Officer&#8482;</h2>
+            <hr>
+            <p class="lead">Introducing the Virtual Sustainability Officer&#8482; - a fully digital experience to allow your company to develop a comprehesive and effective net-zero strategy, to engage and empower your employees, and to efficiently become a environmentally responsible organisation.</p>
+          </header>
 
 
-            <div class="row gap-y">
+          <div class="row gap-y">
 
-              <div class="col-md-6 col-xl-4">
-                <div class="media">
-                  <div class="step-icon">
-                    <span class="iconbox">1</span>
-                  </div>
-                  <div class="media-body">
-                    <h6>Step One <!--☁️--></h6>
-                    <p>We <b>measure</b> your carbon emission profile using our verified models.</p>
-                    <p><img src="assets/img/process/data.svg" alt="..."></p>
-                  </div>
+
+            <div class="col-md-4">
+              <ul class="nav nav-tabs-shadow nav-tabs-border">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#tab-1">
+                    <h6>Step 1: Measure</h6>
+                    <p class="small mb-0">We measure your carbon emission profile using our verified models.</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-2">
+                    <h6>Step 2: Reduce</h6>
+                    <p class="small mb-0">We help you to reduce your impact through a series of suggested actions, tailored to your emission hotspots.</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-3">
+                    <h6>Step 3: Act</h6>
+                    <p class="small mb-0">We offset unavoidable emissions through best in class emissions offset schemes.</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-4">
+                    <h6>Step 4: Engage</h6>
+                    <p class="small mb-0">We provide you the tools to engage your employees to help them become climate champions for this generation and the next.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-md-8 ml-auto align-self-center">
+              <div class="tab-content text-center">
+
+                <div class="tab-pane fade show active" id="tab-1">
+                  <img class="shadow-none" src="assets/img/preview/measure.png" alt="...">
                 </div>
-              </div>
 
-              <div class="col-md-6 col-xl-4">
-                <div class="media">
-                  <div class="step-icon">
-                    <span class="iconbox">2</span>
-                  </div>
-                  <div class="media-body">
-                    <h6>Step Two <!--📉--></h6>
-                    <p>We help you to <b>reduce</b> your emissions through a series of suggested actions. </p>
-                    <p><img src="assets/img/process/scrum.svg" alt="..."></p>
-                  </div>
+                <div class="tab-pane fade" id="tab-2">
+                  <img class="shadow-none" src="assets/img/preview/reduce.png" alt="...">
                 </div>
-              </div>
 
-              <div class="col-md-6 col-xl-4">
-                <div class="media">
-                  <div class="step-icon">
-                    <span class="iconbox">3</span>
-                  </div>
-                  <div class="media-body">
-                    <h6>Step Three <!--🌎--></h6>
-                    <p>We <b>offset</b> unavoidable emissions through best in class emissions offset schemes. </p>
-                    <p><img src="assets/img/process/environment.svg" alt="..."></p>
-                  </div>
+                <div class="tab-pane fade" id="tab-3">
+                  <img class="shadow-none" src="assets/img/preview/act.png" alt="...">
                 </div>
+
+                <div class="tab-pane fade" id="tab-4">
+                  <img class="shadow-none" src="assets/img/preview/engage.png" alt="...">
+                </div>
+
               </div>
             </div>
+
+
           </div>
-        </section>
-        <!-- End of Process -->
 
 
-        <section class="section">
+        </div>
+      </section>
+
+
+        <section class="section bg-gray">
                 <div class="container">
                   <header class="section-header">
-                    <h2>Our Clients</h2>
+                    <h2>Trusted By Great Teams</h2>
                     <hr>
                     <p class="lead">Join a growing list of positive and passionate companies, making strides towards sustainable operations.</p>
                   </header>
 
-                  <div class="pb-7" data-provide="slider" data-autoplay="true" data-slides-to-show="4" data-dots="true">
-                    <div><img width="80%" src="assets/img/partner/moneybox.png" alt="partner 1"></div>
-                    <div><img width="80%" src="assets/img/partner/RAS.png" alt="partner 2"></div>
-                    <div><img width="80%" src="assets/img/partner/khc.png" alt="partner 3"></div>
-                    <div><img width="80%" src="assets/img/partner/nri.png" alt="partner 4"></div>
-                    <div><img width="80%" src="assets/img/partner/tln.png" alt="partner 5"></div>
-                    <div><img width="80%" src="assets/img/partner/tsr.png" alt="partner 6"></div>
-                    <div><img width="80%" src="assets/img/partner/c5.jpg" alt="partner 7"></div>
+
+
+                  <div class="mx-auto" data-provide="slider" data-autoplay="true" data-slides-to-show="3" data-dots="true">
+
+
+                    <div class="p-2">
+                      <div class="card text-white bg-img" style="vertical-align: middle; background-image: linear-gradient(135deg, #f86f00 0%, #fa9800 100%); min-height: 200px" data-overlay="2">
+                        <div class="card-body mx-auto flex-grow-0">
+                          <img src="assets/img/partner/clients/website_keyholding.png" alt="partner 1">
+                        </div>
+                        <div class="card-hover bg-dark text-white" data-animation="fade">
+                          <div class="card-body align-self-center">
+                            <h5>The Keyholding Company</h5>
+                            <!-- <p class="mb-0">Find out more here</p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="p-2">
+                      <div class="card text-white bg-img" style="vertical-align: middle; background-image: linear-gradient(135deg, #166179 0%, #239bc1 100%); min-height: 200px" data-overlay="2">
+                        <div class="card-body mx-auto flex-grow-0">
+                          <img src="assets/img/partner/clients/website_moneybox.png" alt="partner 1">
+                        </div>
+                        <div class="card-hover bg-dark text-white" data-animation="fade">
+                          <div class="card-body align-self-center">
+                            <h5>Moneybox</h5>
+                            <!-- <p class="mb-0">Find out more here</p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-2">
+                      <div class="card text-white bg-img" style="vertical-align: middle; background-image: linear-gradient(135deg, #614b79 0%, #a591bb 100%); min-height: 200px" data-overlay="2">
+                        <div class="card-body mx-auto flex-grow-0">
+                          <img src="assets/img/partner/clients/website_atom.png" alt="partner 1">
+                        </div>
+                        <div class="card-hover bg-dark text-white" data-animation="fade">
+                          <div class="card-body align-self-center">
+                            <h5>Atom Bank</h5>
+                            <!-- <p class="mb-0">Find out more here</p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-2">
+                      <div class="card text-white bg-img" style="vertical-align: middle; background-image: linear-gradient(135deg, #0a3f70 0%, #7e83b6 100%); min-height: 200px" data-overlay="2">
+                        <div class="card-body mx-auto flex-grow-0">
+                          <img src="assets/img/partner/clients/website_c5.png" alt="partner 1">
+                        </div>
+                        <div class="card-hover bg-dark text-white" data-animation="fade">
+                          <div class="card-body align-self-center">
+                            <h5>Core Five</h5>
+                            <!-- <p class="mb-0">Find out more here</p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-2">
+                      <div class="card text-white bg-img" style="vertical-align: middle; background-image: linear-gradient(135deg, #3b4965 0%, #c3a899 100%); min-height: 200px" data-overlay="2">
+                        <div class="card-body mx-auto flex-grow-0">
+                          <img src="assets/img/partner/clients/website_bflex.png" alt="partner 1">
+                        </div>
+                        <div class="card-hover bg-dark text-white" data-animation="fade">
+                          <div class="card-body align-self-center">
+                            <h5>B-Flexion</h5>
+                            <!-- <p class="mb-0">Find out more here</p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-2">
+                      <div class="card text-white bg-img" style="vertical-align: middle; background-image: linear-gradient(135deg, #0a4385 0%, #7e83b6 100%); min-height: 200px" data-overlay="2">
+                        <div class="card-body mx-auto flex-grow-0">
+                          <img src="assets/img/partner/clients/website_nri.png" alt="partner 1">
+                        </div>
+                        <div class="card-hover bg-dark text-white" data-animation="fade">
+                          <div class="card-body align-self-center">
+                            <h5>Nuclear Risk Insurers</h5>
+                            <!-- <p class="mb-0">Find out more here</p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="p-2">
+                      <div class="card text-white bg-img" style="vertical-align: middle; background-image: linear-gradient(135deg, #313d48 0%, #313d48 100%); min-height: 200px" data-overlay="2">
+                        <div class="card-body mx-auto flex-grow-0">
+                          <img src="assets/img/partner/clients/website_opera.png" alt="partner 1">
+                        </div>
+                        <div class="card-hover bg-dark text-white" data-animation="fade">
+                          <div class="card-body align-self-center">
+                            <h5>Opera Project Management</h5>
+                            <!-- <p class="mb-0">Find out more here</p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
 
                 </div>
             </section>
 
+        <section class="section">
+          <div class="container">
+            <header class="section-header">
+
+              <h2>Our Partners</h2>
+              <hr>
+              <p>We are serious about creating change, and that's why we've partnered with others who share our ambitions. <p>We’ve partnered with the UNFCCC's initiative (United Nations Framework Convention on Climate Change), <a href="https://unfccc.int/climate-action/climate-neutral-now" target="_blank">Climate Neutral Now</a> initiative, and clients can have confidence in our Science Based Targets initiative (SBTI) processes, which have been validated at the highest level.<p>
+            </header>
+
+            <div class="row gap-y text-center">
+
+              <div class="col-md-6 col-xl-4 feature-1">
+                <img src="assets/img/partner/partners/partner-cam.png" alt="University of Cambridge">
+              </div>
 
 
-
-          <section class="section overflow-hidden pb-0">
-                  <div class="container">
-                    <header class="section-header">
-                      <small>See it in action</small>
-                      <h2>Screenshots</h2>
-                      <hr>
-                      <p class="lead">We waited until we could do it right. Then we did! Instead of creating a carbon copy.</p>
-                    </header>
-
-                    <ul class="nav nav-tabs-outline">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" data-placement="top" href="#shot-1">Overview</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#shot-2">Emissions</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#shot-3">Actions</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#shot-4">Compare</a>
-                      </li>
-                    </ul>
+              <div class="col-md-6 col-xl-4 feature-1">
+                <img src="assets/img/partner/partners/partner-un.png" alt="United Nations Framework Convention on Climate Change">
+              </div>
 
 
-                    <br><br>
+              <div class="col-md-6 col-xl-4 feature-1">
+                <img src="assets/img/partner/partners/partner-gs.png" alt="Gold Standard">
+              </div>
 
 
-                    <div class="tab-content text-center">
-                      <div class="tab-pane fade show active" id="shot-1">
-                        <p class="lead">Quickly understand your impacts and actions points.</p><br>
-                        <img src="assets/img/preview/1_overview.png" alt="...">
-                      </div>
-                      <div class="tab-pane" id="shot-2">
-                          <p class="lead">Emissions broken down by reportable GHG Protocol Scopes, as well as human-actionable departments. Visualise your emissions against competitors, and see annual progress vs. targets.</p><br>
-                        <img src="assets/img/preview/2_emissions.png" alt="...">
-                      </div>
-                      <div class="tab-pane" id="shot-3">
-                          <p class="lead">Use our in-built action tracker to effectively organise and execute your annual sustainability goals effectively. See progress in Kanban and Gantt formats to ensure your sustainability plan remains on track.</p><br>
-                        <img src="assets/img/preview/3_actions.png" alt="...">
-                      </div>
-                      <div class="tab-pane" id="shot-4">
-                          <p class="lead">kjndfsld</p><br>
-                        <img src="assets/img/preview/1_overview.png" alt="...">
-                      </div>
-                    </div>
+              <div class="col-md-6 col-xl-4 feature-1">
+                <img src="assets/img/partner/partners/partner-cnn.png" alt="Climate Neutral Now">
+              </div>
 
 
-                  </div>
-                </section>
-            <!-- Features -->
+              <div class="col-md-6 col-xl-4 feature-1">
+                <img src="assets/img/partner/partners/partner-sdg.png" alt="Sustainable Development Goals">
+              </div>
 
 
-<!-- End of Features -->
+              <div class="col-md-6 col-xl-4 feature-1">
+                <img src="assets/img/partner/partners/partner-tz.png" alt="Tech Zero">
+              </div>
 
-
-
-<!-- Working with the UN -->
-<!--section class="section">
-        <div class="container">
-          <div class="row gap-y align-items-center">
-
-            <div class="col-md-6 text-center text-md-right">
-              <h3 class="fw-500">Supporting the UN's Climate Neutral Now initiative</h3>
-              <br>
-              <p>We’re an official partner to the UNFCCC's initiative (United Nations Framework Convention on Climate Change), <i>Climate Neutral Now.</i><p>
-                Clients can have confidence in our Science Based Targets initiative (SBTI) processes, which have been validated at the highest level.<p>
-                As part of our work, we can offer companies accreditation from the initiative, connecting organisations globally which are aiming for the same low-carbon goals.</p>
-                <p class="gap-xy mt-8"><a class="btn btn-lg btn-round btn-danger w-250" href="partners.html">Find Out More</a>
-
-            </div>
-
-            <div class="col-md-6">
-              <img class="rounded-md ml-md-4" src="assets/img/cnn.png" alt="...">
             </div>
 
           </div>
-        </div>
-      </section-->
-<!-- end of UN -->
-
-
-                <section class="section">
-                         <div class="container">
-                            <header class="section-header">
-                                    <h2>Our Partners</h2>
-                                    <hr>
-                                    <p class="lead">We are serious about creating change, and that's why we've partnered with others who share our ambitions.</p>
-                                    <p>We’re an official partner to the UNFCCC's initiative (United Nations Framework Convention on Climate Change), <i>Climate Neutral Now.</i>
-                Clients can have confidence in our Science Based Targets initiative (SBTI) processes, which have been validated at the highest level.<p>
-
-                                  </header>
-
-                                  <div class="pb-7" data-provide="slider" data-autoplay="true" data-slides-to-show="4" data-dots="true">
-                                    <div><img width="80%" src="assets/img/partner/unfccc.png" alt="partner 1"></div>
-                                    <div><img width="80%" src="assets/img/partner/sdg.png" alt="partner 2"></div>
-                                    <div><img width="80%" src="assets/img/partner/camb.png" alt="partner 5"></div>
-                                    <div><img width="80%" src="assets/img/partner/gs.png" alt="partner 3"></div>
-                                    <div><img width="80%" src="assets/img/partner/verra.png" alt="partner 4"></div>
-                                    <div><img width="80%" src="assets/img/partner/cnn_logo.png" alt="partner 5"></div>
-                                    <div><img width="80%" src="assets/img/partner/gca_logo.png" alt="partner 5"></div>
-
-                                  </div>
-
-                                </div>
-                                        </section>
+        </section>
 
 <!-- contact us-->
 
     <section class="section text-white" style="background-image: linear-gradient(135deg, #5263FF 0%, #52FFEE 100%);">
         <div class="container">
           <header class="section-header">
-            <small>Get in Touch</small>
             <div class="col-md-12">
               <h2>We'd love to hear from you</h2>
               <hr>
-              <p class="text-centre">Whether you're interested in finding out more,<br> need pointers in
-                  the right direction, or want to a start a project, get in touch.<br><bR>
-                  You can email us directly at
-                  <a href="mailto:hello@alectro.io?Subject=Alectro" target="_blank">hello@alectro.io</a>, or click the button below.<p>
-
+              <p>Whether you're interested in finding out more, need pointers in the right direction, or want to a start a project, get in touch. You can email us directly at
+                  <a href="mailto:hello@alectro.io?Subject=Alectro" target="_blank">hello@alectro.io</a>, or click the button below.
                 <div class="text-centre">
-                        <a class="btn btn-lg btn-round btn-danger align-items-center w-250" href="mailto:hello@alectro.io?Subject=Alectro" target="_blank">Say Hello 👋</a>
+                        <a class="btn btn-lg btn-round btn-danger align-items-center w-250" type="button" data-toggle="modal" data-target="#modal-subscribe-2">Get in Touch 🌍</a>
                 </div>
             </div>
         </div>
@@ -387,6 +420,38 @@
         </div>
       </div>
     </footer><!-- /.footer -->
+
+    <div class="modal fade" id="modal-subscribe-2" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-body p-md-0">
+            <div class="row no-gutters">
+              <div class="col-md-4 col-xl-6 d-none d-md-flex bg-img rounded-left" style="background-image: url(assets/img/video/subscribe_modal.png)"></div>
+
+              <div class="col-md-8 col-xl-5 mx-auto">
+                <form class="py-7 input-round mx-auto" action="https://alectro.us6.list-manage.com/subscribe/post?u=f971b95003de6b5198a0cc897&amp;id=a03f898b68" method="post" target="_blank">
+                  <h3><strong>Get in Touch</strong></h3>
+                  <p>Enter your details below and we'll get in touch to discuss how we can help you on your sustainability journey.</p>
+
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="NAME" placeholder="Your Name">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control" type="email" name="EMAIL" placeholder="Your Email">
+                  </div>
+
+                  <button class="btn btn-lg btn-round btn-block btn-primary">Get in Touch 🌍</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
 
     <!-- Scripts -->
