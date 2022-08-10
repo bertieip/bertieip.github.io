@@ -33,9 +33,9 @@
       <div class="container">
 
         <div class="navbar-left">
-          <button class="navbar-toggler" type="button">
-          <span class="navbar-toggler-icon"></span>
-          </button>
+          <!-- <button class="navbar-toggler" type="button">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <!-- </button> -->
           <a class="navbar-brand" href="index.html">
             <img class="logo-dark" src="assets/img/alectroTurq.png" alt="logo">
             <img class="logo-light" src="assets/img/alectroLight.png" alt="logo">
@@ -46,14 +46,7 @@
 
 
           <nav class="nav nav-navbar ml-auto">
-            <!-- <a class="nav-link" href="index.html">Home</a> -->
-            <!-- <a class="nav-link" href="about.html">About Us</a> -->
-            <!--a class="nav-link" href="tech.html">Technology</a-->
-            <!-- <a class="nav-link" href="case-studies.html">Case Studies</a> -->
-            <!--a class="nav-link" href="partners.html">United Nations</a-->
-            <!-- <a class="nav-link" href="blog.html">Blog</a>
-            <a class="nav-link" href="careers.html">Careers</a>
-            <button type="button" class="btn btn-round text-white btn-danger h-80 align-self-center" data-toggle="modal" data-target="#modal-subscribe-2">Book A Demo 🌍</button> -->
+
           </nav>
         </section>
 
@@ -65,7 +58,7 @@
     <header class="header text-white h-fullscreen pb-0 overflow-hidden"
     style="background-image: linear-gradient(135deg, #18206F 0%, #18206F 100%);
     background-color: #18206F;">
-    <canvas class="constellation postion-static" data-radius="100"></canvas>
+    <canvas class="constellation postion-static" data-radius="10"></canvas>
 
       <!-- <div class="overlay opacity-95" style="background-image: linear-gradient(135deg, #5263FF 0%, #52FFEE 100%);"></div> -->
 
@@ -74,7 +67,7 @@
 
                   <div class="col-md-6 col-sm-12 mx-auto text-left">
                       <h1 class="display-5 fw-700">See the <span class="text-alectro">Virtual Sustainability Officer&#8482;</span> in Action.</h1>
-                      <p class>Sign up for a free product demo and we'll get in touch to discuss how we can rapidly measure your emissions and develop your net-zero strategy.</p>
+                      <p class>Get in touch for a free product demo and we'll organise a call to discuss how we can rapidly measure your emissions and develop your net-zero strategy.</p>
                       <ul class="list-unstyled">
                         <li><i class="ti-check text-success mr-2"></i> Automated emissions analysis</li>
                         <li><i class="ti-check text-success mr-2"></i> Emission reduction hotspots</li>
@@ -85,16 +78,13 @@
                     </p>
                   </div>
 
-
-
                 <div class="col-md-6 col-sm-12 mx-auto mt-md-0">
 
-                  <form action="https://alectro.us6.list-manage.com/subscribe/post?u=f971b95003de6b5198a0cc897&amp;id=a03f898b68&amp;f_id=00db08e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <form action="https://alectro.us6.list-manage.com/subscribe/post?u=f971b95003de6b5198a0cc897&amp;id=a03f898b68&amp;f_id=00db08e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" data-on-success="onSuccessCallback" data-on-error="onErrorCallback" class="validate" target="_blank" novalidate>
                     <div class="col-md-10 mx-auto bg-white p-6 rounded">
                     <h4 class="text-dark text-left">Request Demo</h4>
 
-                    <div class="alert alert-success d-on-success">We received your message and will contact you back soon.</div>
-
+                    <div class="alert alert-success d-none">We received your message and will contact you back soon.</div>
 
                     <div class="form-group">
                       <input class="form-control form-control-lg" type="text" name="NAME" placeholder="Your Name">
