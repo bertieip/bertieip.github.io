@@ -20,6 +20,17 @@
   height: 90%;
 }
 
+.wobble-figure {
+  animation: wobble 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes wobble {
+   0% { transform:perspective(100px) translate3d(0,0,-1px); }
+   5% { transform: perspective(100px) translate3d(0,0,-1px);}
+   100% {transform: perspective(100px) translate3d(0,0,1px);}
+}
+
 @media only screen and (max-width: 380px) {
   .mt-nav {
     margin-top: 5.5rem;
