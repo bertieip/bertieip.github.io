@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600" version="1.2" baseProfile="tiny-ps">
+<rect width="600" height="600" fill="url(#paint0_linear_15_16)"/>
+<rect x="166" y="511.013" width="500" height="20" rx="10" transform="rotate(-60 166 511.013)" fill="#49BFE5"/>
+<path d="M363.979 390C360.406 396.188 353.803 400 346.658 400H254.282C247.137 400 240.534 396.188 236.962 390L190.774 310C187.201 303.812 187.201 296.188 190.774 290L236.962 210C240.534 203.812 247.137 200 254.282 200H346.658C353.803 200 360.406 203.812 363.979 210L410.167 290C413.739 296.188 413.739 303.812 410.167 310L363.979 390Z" stroke="#49BFE5" stroke-width="20"/>
+<defs>
+<linearGradient id="paint0_linear_15_16" x1="0" y1="0" x2="600" y2="600" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF6FD8"/>
+<stop offset="1" stop-color="#3813C2"/>
+</linearGradient>
+</defs>
+<title>Title</title></svg>
