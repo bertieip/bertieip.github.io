@@ -90,16 +90,23 @@
               <h3 id="getting-started">Getting Started</h3>
                   <p>
                     You have been selected as the data holder for Expense Data. As such, we need you to upload the expenses so that we can analyse the data.</p>
+
+                    <p>You'll see the following task in your to-do list here: <a href="https://vso.alectro.io/todo-list" target="_blank">vso.alectro.io/todo-list</a></p>
+
+                    <div class="text-center my-6">
+                      <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-01.png" alt="...">
+                      <figcaption class="figure-caption text-center"></figcaption>
+                    </div>
+
                     <p>This guide will help you to complete the data into the format needed to build this part of the company impact.
                   </p>
 
               <hr class="my-8">
 
               <h3 id="finding-data">Finding and Requesting Data</h3>
-              <p>Typically expenses should be available as a direct download or export from an expense software. </p>
-              <p>Please complete this through a direct .xls extraction from your CRM or Expense System.</p>
-              <p>Data should be on a line-by-line basis per transaction. </p>
-              <p>The more descriptions per expense item the better it is for the analysis. </p>
+              <p>By Expenses we mean the company's general expenditures throughout the year. This is where we get information on things like business travel and flights, meals and subsistence, other purchased items (i.e. amazon spend, gifts, stationary, office furniture), and anything else that isn't covered in one of the other data upload categories.
+              <p>Ideally, these expenses should be available as a direct download or export from your expense software, but some organisations might hold this information in a simple Excel (or similar) format - either is fine.
+              <p>Each transaction should be represented as a separate line item, and the more detailed descriptions you can provide for each expense, the better it will be for our analysis. </p>
 
                 <!-- <p>We've listed how to export this data here:</p>
 
@@ -220,50 +227,73 @@
 
               <h3 id="template">Completing Data Template</h3>
 
-              <!-- <div class="text-center my-6">
-                <a href="../assets/img/guide/facilities.png" data-provide="lightbox">
-                  <img class="rounded-md" src="../assets/img/guide/facilities.png" alt="">
+              <div class="accordion accordion-light" id="accordion-4">
 
-                  </a>
-                <footer>The Expense Template</footer>
-              </div> -->
-
-
-                  <br>
-                  <h4 id="regular-license" data-provide="anchor">Admin Data</h4>
-                  <p>The orange panel on the left hand side of the sheet gives you all your admin data. </p>
-                  <h5>Admin Data</h5>
-                  <p>
-                    <ul>
-                    <li><b>Basic Data: </b>This is the company name and the period of data analysis</li>
-
-                  </ul>
+                <div class="card">
+                  <p class="card-title">
+                    <a class="collapsed" data-toggle="collapse" href="#collapse-4"><span class="badge badge-pale badge-info">Using the template</span> Click here for more information using the template →</a>
                   </p>
-                  <h5>Progress Data</h5>
-                  <p>
-                    <ul>
-                    <li><b>Progress: </b>here you can track the progress of the data collection</li>
-                    <li><b>Completed By: </b>Once this data has been completed, add your email and completion data so that we can ask any questions upon verfication.</li>
-                  </ul>
-                  </p>
-                <br>
+
+                  <div id="collapse-4" class="collapse" data-parent="#accordion-4">
+                    <div class="card-body">
+                      <p>You're given a range of options within the Onboarding Wizard. One of these is to "Download Template". Click this to download the template.
+                        <div class="text-center my-6">
+                          <img class="rounded-md" src="../assets/img/guide/using-the-template/using-the-template-01.png" alt="...">
+                          <figcaption class="figure-caption text-center"></figcaption>
+                        </div>
+                      <p>When you click to download the template, you will see a modal pop-up with Key Data and Location Data which you can then use to complete the Admin section of the template.
+                        <div class="text-center my-6">
+                          <img class="rounded-md" src="../assets/img/guide/using-the-template/using-the-template-02.png" alt="...">
+                          <figcaption class="figure-caption text-center"></figcaption>
+                        </div>
+                      <p>Add the relevant data into the Admin Section of the template (Step 1), and then complete the specific data (Step 2).
+                      <p>Once the data is completed, you can click "Upload Raw Data" to upload the data.
+                        <div class="text-center my-6">
+                          <img class="rounded-md" src="../assets/img/guide/using-the-template/using-the-template-03.png" alt="...">
+                          <figcaption class="figure-caption text-center"></figcaption>
+                        </div>
+                      <p>We'll do the rest from here, and we'll be in touch if we have any questions regarding the data.
+                    </div>
+                  </div>
+                </div>
 
 
-                  <h4 id="extended-license" data-provide="anchor">Expense Data</h4>
-                  <p>This guide will walk you through the information we require from the expenses</p>
+
+              </div>
+
+              <p>
+
+              <br>
+
+
+                  <h4 id="extended-license" data-provide="anchor">What to include in the Expense data upload</h4>
+                  <p>Regardless of whether you use the template, or simply upload raw export data, this guide will walk you through the information we require from the expenses:</p>
                   <p><ul>
-                    <li><b>Expense Reference:</b> Simply identifier from your expense system e.g. 00001</li>
-                    <li><b>Account Category:</b> Usually your cost centre e.g. Sales Team, or HR</li>
-                    <li><b>Project Code (if applicable):</b> Helps us to categorise by client projects if required</li>
-                    <li><b>Date of Purchase:</b> The transation date.</li>
-                    <li><b>Expense Description:</b> A plaintext description of the item e.g. "lunch at Pizza Express for 4 people"</li>
-                    <li><b>Expense Category 1:</b> The top level categorisation</li>
-                    <li><b>Expense Category 2:</b> A supplementary category</li>
-                    <li><b>Supplier Name:</b> The supplier e.g. British Airways</li>
-                    <li><b>Currency:</b> The currency e.g. USD or GBP</li>
-                    <li><b>Debit</b> The total spend</li>
-                    <li><b>Credit:</b> The total credit if a refund etc</li>
-                    <li><b>Net:</b> Total cost (positive or negative)</li>
+                    <li><b>Transaction Reference:</b> A unique identifier generated by your expense system, such as "00001."</li>
+                    <li><b>Transaction Date:</b> The specific date on which the transaction occurred.</li>
+                    <li><b>Transaction Description:</b> A top level, clear and concise written description of the item or expense, for example, "lunch at Pizza Express for 4 people."</li>
+                    <li><b>Category 1:</b> The primary or top-level categorization, often corresponding to the Nominal Code name, used to classify the expense.</li>
+                    <li><b>Category 2:</b> An additional categorization or supplementary information, which can include details like the supplier's name or a subcategory.</li>
+                    <li><b>Transaction Spend:</b> The total cost of the transaction, which can be either a positive or negative value and should encompass all expenses, including any Value Added Tax (VAT) if applicable.</li>
+                  </ul>
+                  </p>
+
+                  <p>In some cases, you may wish to include the following categories for more information:
+                    <ul>
+                      <li><b>Currency:</b> The currency e.g. USD, GBP, EUR - we will assume GBP unless otherwise told</li>
+                      <li><b>Debit/Credit information: </b> The total transaction values, given in debit or credit if required</li>
+                    </ul>
+                  </p>
+
+                  <p>Finally, depending on the detail of your expenses, the following special categories can be used to split the end carbon emissions further:
+                    <ul>
+                      <li><b>Location ID:</b> f expenses are associated with specific locations, please provide the Location ID as obtained from the template download step.</li>
+                      <li><b>Department Code:</b> Typically, this represents your cost center, such as Sales Team or HR, indicating the department or team responsible for the expense.</li>
+                      <li><b>Project Code:</b> If applicable, this code helps categorize expenses related to specific client projects, facilitating project-based accounting and tracking.</li>
+                    </ul>
+                  </p>
+
+
                   </ul>
                   </p>
 
