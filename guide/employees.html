@@ -14,7 +14,7 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-    <link rel="icon" href="../assets/img/favicon.png">
+    <link rel="icon" href="../assets/img/favicon_2022.png">
 
     <!--  Open Graph Tags -->
     <meta property="og:title" content="alectro.io">
@@ -87,8 +87,9 @@
           <div class="col-md-7 col-xl-8 mr-md-auto py-8">
             <article>
 
-              <p>
-                You have been selected as the Human Resource data holder. As such, we need you to complete the wizard for in the Reporting Period.</p>
+              <p id = "getting-started">
+                You have been selected as the Human Resource data holder. As such, we need you to complete the wizard for Employees in the Reporting Period.
+                <p>If you think you have been incorrectly added into this role please contact your Admin or the Alectro team.</p>
 
                 <p>You'll see the following task in your to-do list here: <a href="https://vso.alectro.io/todo-list" target="_blank">vso.alectro.io/todo-list</a></p>
 
@@ -97,18 +98,19 @@
                   <figcaption class="figure-caption text-center"></figcaption>
                 </div>
 
-                <p>This guide will help you to complete the data into the format needed to build this part of the company impact.
+                <p>This guide will help you to upload the data in the required format.
               </p>
 
               <hr class="my-8">
 
-              <h3 id="finding-data">Finding and Requesting Data</h3>
-              <p>As most information is internal, you should be able to complete the template from your own systems.</p>
-              <p>We will be asking for a list of employees for the period in question, and current employees for ongoing analysis.</p>
-              <p>For example, if the period of analysis is <code>01/01/2022 - 31/12/2022</code> then please add any employees who have worked any period of time at the company from <code>01/01/2022</code> to today.
-              <p>We will not contact anyone who is no longer at the company.</p>
+              <h3 id="finding-data">Getting the Data You Need</h3>
+                  <p>Most of the required information is available within your own systems, making it easy to complete the template.</p>
+                  <p>To create user profiles, we require an employee list covering the analysis period. This list should contain employee names, emails, start dates, office locations, and their employment status (full-time or part-time).</p>
+                  <p>For instance, if the analysis period is from <code>01/01/2023</code> to <code>31/12/2023</code>, please include all current employees who have worked at the company from <code>01/01/2023</code> until today.</p>
+                  <p>We won't be reaching out to individuals who are no longer with the company.</p>
 
-              <p>We have provided a template that you can download to collect the data before uploading it if required.
+
+                  <p>You can download a template for collecting the data before uploading it, if needed.</p>
               <p>Click <a href="https://alectro-universal-content.s3.eu-west-1.amazonaws.com/onboarding-templates/Employee+Template.xlsx" target="_blank">here to download the template</a></p>
 
 
@@ -123,104 +125,233 @@
                   <figcaption class="figure-caption text-center"></figcaption>
                 </div>
 
-                <h4 id="">Step 1: Complete the Basic Information</h4>
-                <p>Click Complete Template and Upload to begin</p>
+                <h4 id="">Step 1: Start the Import Process</h4>
+                <p>You have two options:</p>
+                <ol>
+                  <li>Add Single User: use this option to add a single user directly to the platfrom (<a href="#single-upload">Add single user →</a>)</li>
+                  <li>Start Import Wizard: use this option to bulk upload users (<a href="#bulk-import">Start Import Wizard →</a>)</li>
+                </ol>
 
-                <div class="text-center my-6">
-                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-03.png" alt="...">
-                  <figcaption class="figure-caption text-center"></figcaption>
-                </div>
-
-                <p>You can download the template by clicking the Download button.
-
-                <p>The Location ID is important as it corresponds to where the employee is affiliated to. You'll need the numbers when you fill in the template.
-
-                <div class="text-center my-6">
-                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-04.png" alt="...">
-                  <figcaption class="figure-caption text-center"></figcaption>
-                </div>
-
-                <p>Once you download and open the template, you'll see a basic .csv file to populate. You'll need to complete the following fields for each employee:
+                <p>Regardless of which option you select, you'll still be entering the same data:
 
                   <p><ul>
-                    <li><b>Email (email):</b> This is the employee's company email address. We will use this to allow them to login to the platform, and enter their own data for onboarding. </li>
-                    <li><b>First Name (first_name):</b> The employee name is used to personalise the platform. They can change this later in the process.</li>
-                    <li><b>Last Name (last_name):</b> The employee name is used to personalise the platform. They can change this later in the process.</li>
-                    <li><b>Start Date (during_yyyy-mm-dd):</b> Enter the date that the employee joined the company. If the employee joined the company before the period of analysis, and the start date is unknown, then use the start of the analysis period. For example, if the period of analysis is <code>01/01/2022 - 31/12/2022</code> then please use <code>01/01/2022</code> as the start date.</li>
-                    <!-- <li><b>End Date:</b> If the employee has since left the company, please enter the date that the employee left. Otherwise, please leave blank if the employee is still at the company. We will not contact any employees who have left the company.</li> -->
-                    <li><b>Primary Location (primary_location_id):</b> Although many employees have flexibility, please assign a <i>primary</i> location for each employee. This is taken from the Location ID on the previous step.</li>
-                    <li><b>Employee Full Time Equivalent (FTE) (employee_fte):</b> To account for full time and part time employees, we need to assign an employee_fte value. 1 means they work full time, and is based on a 40 hour week. Please assign this value. For a simple calculation, 0.5 would be equivalent to working 20 hours a week, or a four day week would be 0.8.</li>
-                  </ul>
+                    <li><b>First Name:</b> The employee name is used to personalise the platform. They can change this later in the process.</li>
+                    <li><b>Last Name:</b> The employee name is used to personalise the platform. They can change this later in the process.</li>
+                    <li><b>Email:</b> This is the employee's company email address. We will use this to allow them to login to the platform, and enter their own data for onboarding. </li>
+                    <li><b>Start Date:</b> Enter the date that the employee joined the company. If the employee joined the company before the period of analysis, and the start date is unknown, then use the start of the analysis period. For example, if the period of analysis is <code>01/01/2023 - 31/12/2023</code> then please use <code>01/01/2023</code> as the start date if it is unknown.</li>
+                    <li><b>Primary Location</b>: Although many employees have flexibility, please assign a <i>primary</i> location for each employee.
+                      <ul>
+                      <li><b>For Single User Import:</b> You can select a location from the dropdown list</li>
+                      <li><b>For Bulk User Import</b> Please assign an id (given in step 1 of the import wizard) - this can be adjusted later</li>
+                      </ul>
+                    </li>
+                    <li><b>Full Time Status</b>
+                      <ul>
+                      <li><b>For Single User Import:</b> The average weekly hours of the employee (assuming a 40h week is fulltime)</li>
+                      <li><b>For Bulk User Import</b>: Use the Employee Full Time Equivalent (FTE) value, where 1 represents full time based on a 40-hour week. Assign this value; for example, 0.5 equals 20 hours a week, and 0.8 corresponds to a four-day workweek.</li>
+                      </ul>
+                    </li>
+                    </ul>
+                  <p>
 
-
-                  <div class="text-center my-6">
-                    <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-05.png" alt="...">
-                    <figcaption class="figure-caption text-center"></figcaption>
-                  </div>
-
-                  <p>When this is completed, save the document and return to the onboarding wizard.
-
-                  <p>Click Next on the Download Template modal, and then click to select the file of the completed template.
-
-                  <p>Click Upload Employees, and you'll be taken to the next page.
-
-                  <div class="text-center my-6">
-                    <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-06.png" alt="...">
-                    <figcaption class="figure-caption text-center"></figcaption>
-                  </div>
-
-                <h4 id="">Step 2: Tweak your data</h4>
-
-                <p>Now you've completed the initial upload, you can tweak the data for each individual employee.</p>
+                <h5 id="single-upload">Add Single User</h5>
 
                 <div class="text-center my-6">
-                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-07.png" alt="...">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-03-a.png" alt="...">
                   <figcaption class="figure-caption text-center"></figcaption>
                 </div>
 
-                <p>Once you've made your edits, check the box on the right hand side, and click to 'Confirm Employees'.
+                <p>Adding a single user is straightforward, as you can just complete the modal with the user details.
+                <p>The user will recieve a welcome email once you click 'Add User' and you will be able to see them by toggling the 'Show Completed' button in the table below.
+
+                <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-04.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h5 id="bulk-import">Start Import Wizard</h5>
+
+                <p>Use this option to bulk upload users in one go
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-03-b.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h6>Stage 1: Pre-import setup</h6>
+                <p>You can download the template by clicking the 'Download Template' button, or use your own excel template.
+                <p>Please note the following things before going any further:
+                  <ol>
+                      <li>You can upload .csv or .xlsx file</li>
+                      <li>Make sure the file has column headings, for example Email, First Name, Last Name, Start Date, Primary Location ID, Employee FTE</li>
+                  </ol>
+
+                <p>Please note the 'Header Columns' and 'Useful Information for Importing' sections to make sure that the data you're uploading is correct. The optional columns (Primary Location ID, and Employee FTE) can be selected/deselected in the Column Mapping step.
+                </p>
+
+                <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-05-a.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h6>Stage 2: Upload your file</h6>
+                <p>Once you have completed the template you can upload the file by selecting it here and clicking 'Next'.
+
+
+                <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-05-b.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h6 id="map-header-columns">Stage 3: Map header columns</h6>
+                <p>Match the column types to the correct header columns in your file. Once you have mapped all the columns, click the 'Next' and we will validate your data.</p>
+                <p>If you deselect Primary Location ID and/or Employee FTE then these columns will be ignored in the upload step:
+                    <ul>
+                        <li>Primary Location ID: Deselecting this column will mean you have to map each employee to a location at a later stage</li>
+                        <li>Employee FTE will default to 1 if left blank</li>
+                    </ul>
+                <p>If there are errors in your data, these will be highlighted once you click Next. For more information on these errors go to the <a href="#errors">Common Errors</a> section here. </p>
+              </p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-05-c.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h6>Stage 4: Data Review</h6>
+                <p>Please review the data below and click 'Import' to import the data into your Virtual Sustainability Officer® when you're ready.</p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-05-d.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h6>Stage 5: Data Import Complete</h6>
+                <p>You have completed the data import and your results are listed:
+                    <ul>
+                        <li>Import Status: This will tell you the number of employees you've successfully imported</li>
+                        <li>Total Duplicates: This will tell you how may email addresses already existed in the platform, so haven't been created. You will see a list of them in the Duplicates table.</li>
+                    </ul>
+
+                <p>When you're happy, click Finish to exit the import wizard.</p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-05-e.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+
+                <h4 id="">Step 2: Confirm and Invite Users</h4>
+
+                <p>Now you've completed the initial upload, you can tweak the data for each individual employee.</p>
+                <p>Each user must be assigned a Primary Location, and have the rest of their data checked.</p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-06-a.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <p>Once you've made your edits, check the box on the right hand side, and click to 'Verify Employees'.
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-06-b.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <p>These employees are now ready to be invited to the Virtual Sustainability Officer®. Select the users you would like to invite, and click 'Send Welcome Email'.</p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-06-c.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <p>As a final step, you will be asked to confirm this action. Please note, this cannot be undone so once you click 'Send Welcome Email' the user will have access to the platform.</p>
+
+                <p>You can also choose to Suppress Email (adding a user without sending them the welcome email). However, we advise against using this option unless explicitly instructed by the Alectro team. While there are various valid reasons for doing so, if these haven't been discussed with you, please refrain from selecting any of these options. If a user is selected in this step it will set their email preferences to not recieve any mail in the future either.</p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-06-d.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <p>Your employees are now being added, indicated by the <span class="badge badge-info">Processing</span> tag.</p>
+                <p>Any emails that bounce will be show here - this is the result of an incorrect email being added.</p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-06-e.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <p>The import table will now be empty, and you can view completed employees by clicking the 'Show Completed' toggle, with successful imports being shown by the <span class="badge badge-success">Added</span> tag</p>
+
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-06-f.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-06-g.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h4 id="">Step 3: Mark as Complete</h4>
+
+                <p>Once you've added the users, you can mark this whole section as complete by clicking Mark as Complete</p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-07-a.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-07-b.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+
+                <p>The section will complete, and you can go back to your to-do list if you have other items to complete, else your work is done!
+
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-07-c.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <br>
+
+
+                <hr class="my-8">
+
+                <h3 id="errors">Common Data Errors</h3>
+                <p>If you get errors in your data upload, they will appear at the end of Stage 3 and you'll be told where they exist in your file</p>
+                <p>The most common errors can be found below:
+                    <ul>
+                        <li>Incorrect Column Mapping: You might have mapped a column incorrectly, for example selecting Email as Start Date</li>
+                        <li>Date Format: This could cause an error if the dates in the data don't match the expected format (e.g., MM/DD/YYYY).</li>
+                        <li>Numbers in names: An error may occur if names include numbers, but the system only accepts alphabetic characters.</li>
+                        <li>Spaces in emails: This might result in an error if email addresses contain spaces, which is not allowed in standard email formats.</li>
+                        <li>Employee FTE: This should be a number between 0 and 1, other numbers will not work</li>
+                    </ul>
 
                 <div class="text-center my-6">
                   <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-08.png" alt="...">
                   <figcaption class="figure-caption text-center"></figcaption>
                 </div>
 
-                <p>Your confirmation message will show how many employees you're adding, and by clicking Confirm, you'll send them the Welcome email so they can complete their onboarding.</p>
+                <p>Once you have corrected your errors you can re-upload your data to  <a href="#map-header-columns">Stage 3: Map Header Columns</a>.</p>
+
+                <hr class="my-8">
+
+                <h3 id="bounced-emails">Fixing Bounced Emails</h3>
+                <p>Some emails bounce when they are created. This is a result of an incorrect email address being added.</p>
+                <p>To correct this issue, you can click the red error icon, enter the correct email address, and click Edit Employee Email.</p>
+                <p>This will send the user a new welcome email, inviting them to complete the onboarding process.</p>
 
                 <div class="text-center my-6">
                   <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-09.png" alt="...">
                   <figcaption class="figure-caption text-center"></figcaption>
                 </div>
-
-                <h4 id="">Step 3: Mark as Complete</h4>
-
-                <p>Once you've added the users, you can return to your onboarding wizard by clicking to <span class="badge badge-light">Go Back</span>. You can also see employees who've been added by clicking the <span class="badge badge-light">Show Completed</span> toggle.</p>
-
-                <div class="text-center my-6">
-                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-10.png" alt="...">
-                  <figcaption class="figure-caption text-center"></figcaption>
-                </div>
-
-                <p>Back the onboarding wizard homepage and you can mark the whole section as complete by clicking Mark as Complete</p>
-
-                <div class="text-center my-6">
-                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-11.png" alt="...">
-                  <figcaption class="figure-caption text-center"></figcaption>
-                </div>
-
-                <div class="text-center my-6">
-                  <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-12.png" alt="...">
-                  <figcaption class="figure-caption text-center"></figcaption>
-                </div>
-
-                <p>The section will complete, and you can go back to your to-do list if you have other items to complete, else your work is done!
-
-                  <div class="text-center my-6">
-                    <img class="rounded-md" src="../assets/img/guide/hr/guide-hr-13.png" alt="...">
-                    <figcaption class="figure-caption text-center"></figcaption>
-                  </div>
-
-                <br>
 
               <hr class="my-8">
 
@@ -230,6 +361,22 @@
                   <h6 id="regular-license" data-provide="anchor">What if I don't know the data?</h6>
                   <p>Please use data as accurate as possible to complete this. Email is the most important component of the analysis, as we can then ask individuals to complete any information that is missing. </p>
                   <p>When adding dates, the month is more important than the day, so the 1st or last day of the month is sufficient in most cases.</p>
+
+                  <br>
+                  <h6 id="regular-license" data-provide="anchor">I need more help - what can I do?</h6>
+                  <p>At the bottom of the page, you're given additional options including:
+                    <ul>
+                        <li><b>Book a call with an expert:</b> This will give you the option to book a call with our support team where they can run you through the data and the process</li>
+                        <li><b>Upload Raw Data:</b> If you are having any issues with the import wizard, then you can send raw data to the Alectro team for them to process.</li>
+                    </ul>
+
+                    </p>
+                  <p>For anything else, please get in touch - we're always happy to help!</p>
+
+                  <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/using-the-template/using-the-template-01.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                  </div>
 
 
 
@@ -249,7 +396,11 @@
                 <!-- <a class="nav-link" href="#top">Back to top</a> -->
                 <a class="nav-link" href="#getting-started">Getting Started</a>
                 <a class="nav-link" href="#finding-data">Finding and Requesting Data</a>
-                <a class="nav-link" href="#template">Completing Data Template</a>
+                <a class="nav-link" href="#template">Completing Data Upload</a>
+                    <a class="nav-link ml-3" href="#single-upload">Add Single User</a>
+                    <a class="nav-link ml-3" href="#bulk-import">Start Import Wizard</a>
+                <a class="nav-link" href="#errors">Common Data Errors</a>
+                <a class="nav-link" href="#bounced-emails">Fixing Bounced Emails</a>
                 <a class="nav-link" href="#faq">FAQ</a>
               </nav>
             </aside>
