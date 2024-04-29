@@ -14,7 +14,7 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-    <link rel="icon" href="../assets/img/favicon.png">
+    <link rel="icon" href="../assets/img/favicon_2022.png">
 
     <!--  Open Graph Tags -->
     <meta property="og:title" content="alectro.io">
@@ -108,120 +108,6 @@
               <p>Ideally, these expenses should be available as a direct download or export from your expense software, but some organisations might hold this information in a simple Excel (or similar) format - either is fine.
               <p>Each transaction should be represented as a separate line item, and the more detailed descriptions you can provide for each expense, the better it will be for our analysis. </p>
 
-                <!-- <p>We've listed how to export this data here:</p>
-
-
-                          <div class="accordion accordion-connected rounded" id="accordion-job">
-
-                            <div class="card">
-                              <h6 class="card-title">
-                                <a class="d-flex align-items-center collapsed" data-toggle="collapse" href="#collapse-job-1">
-                                  <strong class="mr-auto">Xero</strong>
-                                </a>
-                              </h6>
-
-                              <div id="collapse-job-1" class="collapse" data-parent="#accordion-job">
-                                <div class="card-body">
-                                  <p>Add steps here</p>
-                                  <ol>
-                                    <li>Go here</li>
-                                    <li>Do this</li>
-                                    <li>add this</li>
-                                    <li>click here</li>
-                                  </ol>
-
-                                  <hr class="w-100px">
-
-                                  <p class="text-center"><a class="btn btn-lg btn-primary" href="../page/career-single.html">Read more here</a></p>
-                                </div>
-                              </div>
-                            </div>
-
-
-                            <div class="card">
-                              <h6 class="card-title">
-                                <a class="d-flex align-items-center collapsed" data-toggle="collapse" href="#collapse-job-2">
-                                  <strong class="mr-auto">Sage</strong>
-
-                                </a>
-                              </h6>
-
-                              <div id="collapse-job-2" class="collapse" data-parent="#accordion-job">
-                                <div class="card-body">
-                                  <p>Add steps here</p>
-                                  <ol>
-                                    <li>Go here</li>
-                                    <li>Do this</li>
-                                    <li>add this</li>
-                                    <li>click here</li>
-                                  </ol>
-
-                                  <hr class="w-100px">
-
-                                  <p class="text-center"><a class="btn btn-lg btn-primary" href="../page/career-single.html">Read more here</a></p>
-                                </div>
-                              </div>
-                            </div>
-
-
-                            <div class="card">
-                              <h6 class="card-title">
-                                <a class="d-flex align-items-center collapsed" data-toggle="collapse" href="#collapse-job-3">
-                                  <strong class="mr-auto">Pleo</strong>
-
-                                </a>
-                              </h6>
-
-                              <div id="collapse-job-3" class="collapse" data-parent="#accordion-job">
-                                <div class="card-body">
-                                  <p>Add steps here</p>
-                                  <ol>
-                                    <li>Go here</li>
-                                    <li>Do this</li>
-                                    <li>add this</li>
-                                    <li>click here</li>
-                                  </ol>
-
-                                  <hr class="w-100px">
-
-                                  <p class="text-center"><a class="btn btn-lg btn-primary" href="../page/career-single.html">Read more here</a></p>
-                                </div>
-                              </div>
-                            </div>
-
-
-                            <div class="card">
-                              <h6 class="card-title">
-                                <a class="d-flex align-items-center collapsed" data-toggle="collapse" href="#collapse-job-4">
-                                  <strong class="mr-auto">SOMETHING ELSE</strong>
-
-                                </a>
-                              </h6>
-
-                              <div id="collapse-job-4" class="collapse" data-parent="#accordion-job">
-                                <div class="card-body">
-                                  <p>Add steps here</p>
-                                  <ol>
-                                    <li>Go here</li>
-                                    <li>Do this</li>
-                                    <li>add this</li>
-                                    <li>click here</li>
-                                  </ol>
-
-                                  <hr class="w-100px">
-
-                                  <p class="text-center"><a class="btn btn-lg btn-primary" href="../page/career-single.html">Read more here</a></p>
-                                </div>
-                              </div>
-                            </div>
-
-
-                          </div> -->
-
-
-
-
-
 
               <hr class="my-8">
 
@@ -266,28 +152,66 @@
               <br>
 
 
+
+
                   <h4 id="extended-license" data-provide="anchor">What to include in the Expense data upload</h4>
                   <p>Regardless of whether you use the template, or simply upload raw export data, this guide will walk you through the information we require from the expenses:</p>
-                  <p><ul>
-                    <li><b>Transaction Reference:</b> A unique identifier generated by your expense system, such as "00001."</li>
-                    <li><b>Transaction Date:</b> The specific date on which the transaction occurred.</li>
-                    <li><b>Transaction Description:</b> A top level, clear and concise written description of the item or expense, for example, "lunch at Pizza Express for 4 people."</li>
-                    <li><b>Category 1:</b> The primary or top-level categorization, often corresponding to the Nominal Code name, used to classify the expense.</li>
-                    <li><b>Category 2:</b> An additional categorization or supplementary information, which can include details like the supplier's name or a subcategory.</li>
-                    <li><b>Transaction Spend:</b> The total cost of the transaction, which can be either a positive or negative value and should encompass all expenses, including any Value Added Tax (VAT) if applicable.</li>
-                  </ul>
+                  <p>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Required</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Reference</th>
+                            <td>A unique identifier generated by your expense system, such as "2023_00001"</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Date</th>
+                            <td>The specific date on which the transaction occurred.</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Description</th>
+                            <td>A top level, clear and concise written description of the item or expense, for example, "lunch at Pizza Express for 4 people."</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Category 1</th>
+                            <td>The primary or top-level categorization, often corresponding to the Nominal Code name, used to classify the expense.</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Category 2</th>
+                            <td>An additional categorization or supplementary information, which can include details like the supplier's name or a subcategory.</td>
+                            <td>Optional</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Spend (GBP)</th>
+                            <td> The total cost of the transaction, which can be either a positive or negative value and should encompass all expenses, including any Value Added Tax (VAT) if applicable.</td>
+                            <td>Yes</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+
+
                   </p>
 
                   <p>In some cases, you may wish to include the following categories for more information:
                     <ul>
                       <li><b>Currency:</b> The currency e.g. USD, GBP, EUR - we will assume GBP unless otherwise told.</li>
-                      <li><b>Debit/Credit information: </b> The total transaction values, given in debit or credit if required.</li>
                     </ul>
                   </p>
 
                   <p>Finally, depending on the detail of your expenses, the following special categories can be used to split the end carbon emissions further:
                     <ul>
-                      <li><b>Location ID:</b> f expenses are associated with specific locations, please provide the Location ID as obtained from the template download step.</li>
+                      <li><b>Location ID:</b> If expenses are associated with specific locations, please provide the Location ID as obtained from the template download step.</li>
                       <li><b>Department Code:</b> Typically, this represents your cost center, such as Sales Team or HR, indicating the department or team responsible for the expense.</li>
                       <li><b>Project Code:</b> If applicable, this code helps categorize expenses related to specific client projects, facilitating project-based accounting and tracking.</li>
                     </ul>
@@ -304,9 +228,13 @@
 
               <h3 id="faq">Frequently Asked Questions</h3>
 
-                  <br>
+
                   <h6 id="regular-license" data-provide="anchor">What if I don't know the data?</h6>
                   <p>Expense data is crucial for the analysis to take place. Without spend data, there is no way to quantify the material impact of the company over the year. That being said, there is also no way to do traditional financial accounting without this spend data being tracked! Therefore, every single organisation needs this data for accounting purposes, and so it should be available within the company.</p>
+
+                  <br>
+                  <h6 id="regular-license" data-provide="anchor">What data should be included?</h6>
+                  <p>At a top level, anything that the business spends during the year could contribute to the carbon impact. However, items like taxes, payroll, bank fees, revaluations, and depreciations can be exluded.</p>
 
 
 
@@ -385,7 +313,7 @@
           </div>
 
           <div class="col-md-3 text-center text-md-left">
-            <small>© 2023 Alectro Limited. All rights reserved.</small>
+            <small>© 2024 Alectro Limited. All rights reserved.</small>
           </div>
 
           <div class="col-md-9 text-center text-md-right">
