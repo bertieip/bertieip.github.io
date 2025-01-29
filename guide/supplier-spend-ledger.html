@@ -22,6 +22,9 @@
     <meta property="og:image" content="http://alectro.io/assets/img/guide/onboarding_guide.jpg" />
     <meta property="og:description" content="Alectro's onboarding guide" />
     <meta property="og:url" content="https://www.alectro.io/" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7decdcb920.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -45,14 +48,6 @@
 
 
           <nav class="nav nav-navbar ml-auto">
-            <!-- <a class="nav-link" href="../index.html">Home</a> -->
-            <!-- <a class="nav-link" href="../about.html">About Us</a> -->
-            <!--a class="nav-link" href="tech.html">Technology</a-->
-            <!-- <a class="nav-link" href="../case-studies.html">Case Studies</a> -->
-            <!--a class="nav-link" href="partners.html">United Nations</a-->
-            <!-- <a class="nav-link" href="../blog.html">Blog</a>
-            <a class="nav-link" href="../careers.html">Careers</a> -->
-            <!-- <a class="btn btn-round btn-danger h-80 align-self-center" href="mailto:hello@alectro.io?Subject=Support:Facilites_Data" target="_blank">Get in touch</a> -->
           </nav>
         </section>
 
@@ -89,43 +84,201 @@
 
               <h3 id="getting-started">Getting Started</h3>
                   <p>
-                    You have been selected as the data holder for Supplier Spend Ledger. As such, we need you to upload the requested data so that we can analyse the data.</p>
-                    <p>This guide will help you to complete the data into the format needed to build this part of the company impact.
+                    You've been assigned as the data holder for the Supplier Spend Ledger, which tracks annual spending with each supplier during the reporting year. </p>
+                    <p>Uploading your Supplier Spend Ledger to our platform is a simple and quick process. Follow these steps to ensure your data is uploaded correctly and seamlessly integrated into the platform.
                   </p>
+
+                  <p>You'll see the following task in your to-do list here: <a href="https://vso.alectro.io/todo-list" target="_blank">vso.alectro.io/todo-list</a></p>
+
+                  <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-to-do.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                  </div>
 
               <hr class="my-8">
 
               <h3 id="finding-data">Finding and Requesting Data</h3>
-              <p>Typically this data should be available as a direct download or export from an expense software. </p>
-              <p>Please complete this through a direct .xls extraction from your CRM or Expense System.</p>
-              <p>Data should be provided as the sum of the spend per supplier. </p>
+              <p>Typically this data should be available as a direct download or export from an expense software. Data should be provided as the sum of the spend per supplier.</p>
 
+              <h4 id="" data-provide="anchor">Supplier Data Columns</h4>
 
+              <p>Before uploading your document, ensure that it includes the following required columns:</p>
+              <p>
+                <ul>
+                <li><b>Supplier Name: </b>The name of the supplier (e.g., ABC Supplies Ltd.).</li>
+                <li><b>Total Annual Supplier Spend (GBP):</b> Total Annual Spend (GBP): The total amount spent with the supplier for the reporting year (e.g., 12500).
+                    <ul><li><u>N.B. This must be a number and not include currency symbols</u></li>  </ul></li>
+              </ul>
+              <p>Optional column:
+                <p>
+                  <ul>
+                  <li><b>Spend Percent (%): </b>If applicable, include the percentage of total spend attributed to this supplier (e.g., 15%).
+                        <ul><li><u>N.B. This must be a decimal percentage as a number less than 1. For example 15% should be entered as 0.15.</u></li>  </ul></li>
+                  </li>
+                </ul>
+              </p>
 
-
+              <p>As an example, the data might look like this:
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-01.jpg" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
 
 
               <hr class="my-8">
 
-              <h3 id="template">Completing Data Template</h3>
+              <h3 id="uploading-data">Uploading Data</h3>
 
+              <h4 id="raw-data">Using Raw Data</h4>
 
-                  <h4 id="extended-license" data-provide="anchor">Supplier Data</h4>
-                  <p>This guide will walk you through the information we require from the Supplier Spend Ledger</p>
-                  <p><ul>
-                    <li><b>id:</b> This can be left blank and it will be automtically created on upload</li>
-                    <li><b>Supplier Name:</b> The name of the supplier as listed in you CRM/Supplier Management System</li>
-                    <li><b>Total Annual Supplier Spend (GBP):</b> The total spend at that supplier during the period of analysis</li>
+              <div class="accordion accordion-light" id="accordion-4">
 
-                  </ul>
+                <div class="card">
+                  <p class="card-title">
+                    <a class="collapsed" data-toggle="collapse" href="#collapse-4"><span class="badge badge-pale badge-info">Using the template</span> Although we recommend using the Upload Wizard directly, you may wish to upload the data directly in its raw format. →</a>
                   </p>
 
-                  <p>As an example, the data might look like this:
-                    <div class="text-center my-6">
-                      <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-01.png" alt="...">
-                      <figcaption class="figure-caption text-center"></figcaption>
+                  <div id="collapse-4" class="collapse" data-parent="#accordion-4">
+                    <div class="card-body">
+                      <p>Once the data is in the correct format, you can click "Upload Raw Data" to upload the data. Please note, this will delay the processing time of the data.
+                        <div class="text-center my-6">
+                          <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-raw-data-upload.png" alt="...">
+                          <figcaption class="figure-caption text-center"></figcaption>
+                        </div>
+                      <p>We'll do the rest from here, and we'll be in touch if we have any questions regarding the data.
                     </div>
+                  </div>
+                </div>
 
+
+
+              </div>
+
+              <br>
+
+              <h4 id="import-data" data-provide="anchor">Using the Upload Wizard</h4>
+
+                <p>When you click to begin your task, you'll see the onboarding panel.</p>
+                <p>Click <span class="badge badge-primary">Start Upload</span> to upload your file</p>
+
+                  <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-02.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                  </div>
+
+
+                  <h4 id="">Step 1: Pre-import setup</h4>
+                  <p>Check your data contains the correct headers and is for the correct Reporting Period<p>
+                    <p>The platform supports the following file formats for uploading:
+                    <ul>
+                    <li>CSV (Comma-Separated Values)</li>
+                    <li>XLSX (Microsoft Excel)</li>
+                  </ul>
+
+                  <p>To download a file template click <span class="badge badge-light">Download Template</span>
+
+                  <p>To download an example of the data click  <span class="badge badge-light"><i class="fa-solid fa-arrow-up-right-from-square"></i> Click here to download an example of how the supply chain template should be filled out</span>
+
+                  <p>When you're ready to proceed, please click <span class="badge badge-primary">Next</span></p>
+
+                  <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-step-1.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                  </div>
+
+                  <h4 id="">Step 2: Upload Your Document</h4>
+                  <p>Please upload your data file - you can drag and drop the file or click the button to add your file.<p>
+                  <p>Once added, you'll see the filename in the upload box.<p>
+                  <p>Use the dropdown menu to select which locations the data is associated to.<p>
+                  <p>Once uploaded, click <span class="badge badge-primary">Next</span>.</p>
+
+
+                  <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-step-2.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                  <h4 id="">Step 3: Map header columns</h4>
+                  <p>Match the column types to the correct header columns in your file. </p>
+                  <p>If you want to include the Spend Percent column, please tick the box. You may wish to include Spend Percent if you are only uploading a certain proportion of your supply chain.</p>
+                    <p>Once you have mapped all the columns, please click <span class="badge badge-primary">Next</span></p>
+
+
+                  <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-step-3.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                  <h4 id="">Step 4: Review Data</h4>
+                  <p>The platform will automatically validate your file to ensure all required columns are included and formatted correctly.</p>
+                  <p>You will have to go back and re-upload your file if there are errors, but the platform will tell you the cause of these errors and where they are in your file to make it easy to correct them.</p>
+                  <p>You can see the most common errors with data uploads here: <a href="#troubleshooting">Troubleshooting Common Errors</a> <p>
+                  <p>Click <span class="badge badge-primary">Import</span> when you're ready</p>
+
+
+                  <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-step-4.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                  <h4 id="">Step 5: Data Import Complete</h4>
+                  <p>The results of your import will show.</p>
+                  <p>Any duplicate data will not be uploaded.</p>
+                  <p>Click <span class="badge badge-primary">Finish</span> to close the import wizard.</p>
+
+                  <p>The Recent Uploads table shows you the Status of your data:<p>
+
+                    <ul>
+                    <li><b>Unverified</b>: Indicates that data has been uploaded as a raw file and will need to be processed by the Alectro team manually.
+                    <li><b>Queued</b>: Indicates data has successfully been imported and is in the queue to be processed.</li>
+                    <li><b>Underway</b>: Indicates data anaylis has been started on the uploaded data</li>
+                    <li><b>Complete</b>: Indicates data analysis is completed and the results will show in the platform</li>
+                  </ul>
+
+
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/supply-chain/guide-supply-chain-step-5.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h4 id="">What happens next?</h4>
+                <p>Once all locations are completed, you can mark the whole section as complete by clicking <span class="badge badge-primary">Mark as Complete</span></p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/electronics/guide-electronics-completed.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <p>The section will complete, and you can go back to your to-do list if you have other items to complete, else your work is done!
+
+                <p>Your to-do list will now have a completed message in it.
+
+
+              <div class="text-center my-6">
+                <img class="rounded-md" src="../assets/img/guide/electronics/guide-electronics-to-do-completed.png" alt="...">
+                <figcaption class="figure-caption text-center"></figcaption>
+              </div>
+
+
+
+                    <h3 id="troubleshooting">Troubleshooting Common Errors</h3>
+
+
+                    <p>Before uploading your document, ensure that it includes the following required columns:</p>
+                    <p>
+                      <ul>
+                      <li><b>Missing Columns:</b>  Ensure your file contains the required columns: Supplier Name and Total Annual Spend (GBP).</li>
+                      <li><b>Incorrect File Format:</b>  Verify your file is saved in CSV or XLSX format.</li>
+                      <li><b>Validation Issues:</b>  Check for typos or inconsistencies in your data, such as blank fields or incorrect spend formats.</li>
+                      <li><b>Data Formatting:</b>  The data must be in the correct format to upload - please ensure that each column is in its correct format. </li>
+                      <ul>
+                        <li><b>Supplier Name</b>: Please enter this data  </u></li>
+                        <li><b>Total Annual Supplier Spend (GBP)</b>: This must be a number and not include currency symbols</u></li>
+                        <li><b>Spend Percent (%)</b>: This must be a decimal percentage as a number less than 1. For example 15% should be entered as 0.15.</u></li>
+
+                      </ul></li>
+                      </ul>
 
 
 
@@ -133,13 +286,13 @@
 
               <h3 id="faq">Frequently Asked Questions</h3>
 
-                  <br>
-                  <h6 id="regular-license" data-provide="anchor">What if I don't know the data?</h6>
-                  <p>This data should be accessible for any organisation that has to do a set of annual accounts. Please get in touch with us if you think you will have trouble accessing the data.</p>
+              <h6 id="regular-license" data-provide="anchor">What if I don't know the data?</h6>
+              <p>This data should be accessible for any organisation that has to do a set of annual accounts. Please get in touch with us if you think you will have trouble accessing the data.</p>
 
-                  <br>
-                  <h6 id="regular-license" data-provide="anchor">What to do if I have individual suppliers?</h6>
-                  <p>When it comes to individual suppliers it can be really hard to measure the individual impact. You can select "External Consultant" in place of these actual supplier names, and we'll adjust the data calculations accordingly.</p>
+              <br>
+              <h6 id="regular-license" data-provide="anchor">What happens if I include the "Spend Percent" column?</h6>
+              <p>If you’ve included the optional Spend Percent (%) column, we will not auto-generate the spend percent, so all rows must have data. Use this option if you are only uploading a subset of your total spend.</p>
+
 
 
 
@@ -160,8 +313,11 @@
                 <!-- <a class="nav-link" href="#top">Back to top</a> -->
                 <a class="nav-link" href="#getting-started">Getting Started</a>
                 <a class="nav-link" href="#finding-data">Finding and Requesting Data</a>
-                <a class="nav-link" href="#template">Completing Data Template</a>
-                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link" href="#uploading-data">Uploading Data</a>
+                <a class="nav-link ml-3" href="#raw-data">Using Raw Data</a>
+                <a class="nav-link ml-3" href="#import-data">Using the Upload Wizard</a>
+                <a class="nav-link" href="#troubleshooting">Troubleshooting Common Errors</a>
+                <a class="nav-link" href="#faq">Frequently Asked Questions</a>
               </nav>
             </aside>
           </div>
@@ -217,7 +373,7 @@
           </div>
 
           <div class="col-md-3 text-center text-md-left">
-            <small>© 2024 Alectro Limited. All rights reserved.</small>
+            <small>© 2025 Alectro Limited. All rights reserved.</small>
           </div>
 
           <div class="col-md-9 text-center text-md-right">

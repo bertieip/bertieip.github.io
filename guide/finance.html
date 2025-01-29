@@ -45,14 +45,6 @@
 
 
           <nav class="nav nav-navbar ml-auto">
-            <!-- <a class="nav-link" href="../index.html">Home</a> -->
-            <!-- <a class="nav-link" href="../about.html">About Us</a> -->
-            <!--a class="nav-link" href="tech.html">Technology</a-->
-            <!-- <a class="nav-link" href="../case-studies.html">Case Studies</a> -->
-            <!--a class="nav-link" href="partners.html">United Nations</a-->
-            <!-- <a class="nav-link" href="../blog.html">Blog</a>
-            <a class="nav-link" href="../careers.html">Careers</a> -->
-            <!-- <a class="btn btn-round btn-danger h-80 align-self-center" href="mailto:hello@alectro.io?Subject=Support:Facilites_Data" target="_blank">Get in touch</a> -->
           </nav>
         </section>
 
@@ -64,7 +56,7 @@
     <header class="header text-white bg-dark pt-9 pb-5" style="background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);">
       <!-- <header class="header text-white" style="background-image: url(../assets/img/video/tree.jpg)" data-overlay="7"> -->
       <div class="container">
-        <h3 id="top">Onboarding Guide: Expense Data</h3>
+        <h3 id="top">Onboarding Guide: Company Expenditure</h3>
       </div>
     </header><!-- /.header -->
 
@@ -89,53 +81,71 @@
 
               <h3 id="getting-started">Getting Started</h3>
                   <p>
-                    You have been selected as the data holder for Expense Data. As such, we need you to upload the expenses so that we can analyse the data.</p>
+                    You've been assigned as the data holder for Expenditure which covers the company's general spending, including business travel, flights, meals, subsistence, purchases (e.g., Amazon orders, gifts, stationery, office furniture), and other uncategorised items.</p>
+                    <p><b>These should be listed as individual transactions - if you are unsure of the correct data to upload, please request support from the Alectro team and we'll be happy to help!</b></p>
+                    <p>Uploading your data to our platform is a simple and quick process. Follow these steps to ensure your data is uploaded correctly and seamlessly integrated into the platform.
 
-                    <p>You'll see the following task in your to-do list here: <a href="https://vso.alectro.io/todo-list" target="_blank">vso.alectro.io/todo-list</a></p>
+                      <p>You'll see the following task in your to-do list here: <a href="https://vso.alectro.io/todo-list" target="_blank">vso.alectro.io/todo-list</a></p>
 
-                    <div class="text-center my-6">
-                      <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-01.png" alt="...">
-                      <figcaption class="figure-caption text-center"></figcaption>
-                    </div>
-
-                    <p>This guide will help you to complete the data into the format needed to build this part of the company impact.
+                      <div class="text-center my-6">
+                        <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-to-do.png" alt="...">
+                        <figcaption class="figure-caption text-center"></figcaption>
+                      </div>
                   </p>
 
               <hr class="my-8">
 
               <h3 id="finding-data">Finding and Requesting Data</h3>
-              <p>By Expenses we mean the company's general expenditures throughout the year. This is where we get information on things like business travel and flights, meals and subsistence, other purchased items (i.e. amazon spend, gifts, stationary, office furniture), and anything else that isn't covered in one of the other data upload categories.
-              <p>Ideally, these expenses should be available as a direct download or export from your expense software, but some organisations might hold this information in a simple Excel (or similar) format - either is fine.
-              <p>Each transaction should be represented as a separate line item, and the more detailed descriptions you can provide for each expense, the better it will be for our analysis. </p>
+              <p>The data should be available as a direct download or export from your expense software, but some organisations might hold this information in a simple Excel (or similar) format - either is fine.</p>
+              <p>Each transaction should be represented as a separate line item, and the more detailed descriptions you can provide for each expense, the better it will be for our analysis.</p>
+
+              <h4 id="" data-provide="anchor">Supplier Data Columns</h4>
+
+              <p>Before uploading your document, ensure that it includes the following required columns:</p>
+              <p>
+                <ul>
+                <li><b>Date: </b>The specific date on which the transaction occurred.</li>
+                          <ul><li><i>N.B. Ensure this column is in a date format upon upload - we suggest YYYY/MM/DD to ensure consistency.</i></li>  </ul></li>
+                <li><b>Description: </b>A top level, clear and concise written description of the item or expense, for example, "lunch at Pizza Express for 4 people.", or "LHR-JFK Business class return flight for 1 person"</li>
+                <li><b>Category 1: </b>The primary or top-level categorization, often corresponding to the Nominal Code name, used to classify the expense.</li>
+                <li><b>Spend: </b>The gross/total cost of the transaction, which can be either a positive or negative value and should encompass all expenses, including any Value Added Tax (VAT) if applicable.</li>
+              </ul>
+              <p>Optional column:
+                <p>
+                  <ul>
+                  <li><b>Expense Reference: </b>A unique identifier generated by your expense system, such as "2023_00001"</li>
+                  <li><b>Category 2/Supplier: </b>An additional categorization or supplementary information, which can include details like the supplier's name or a subcategory.</li>
+                  <li><b>Location ID: </b>If expenses are associated with specific locations, please provide the Location ID as obtained from the template download step.</li>
+                  <li><b>Department Code: </b>Typically, this represents your cost center, such as Sales Team or HR, indicating the department or team responsible for the expense.</li>
+                  <li><b>Project Code: </b>If applicable, this code helps categorize expenses related to specific client projects, facilitating project-based accounting and tracking.</li>
+                </ul>
+              </p>
+
+              <p>As an example, the data might look like this:
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-02.jpg" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
 
 
               <hr class="my-8">
 
-              <h3 id="template">Completing Data Template</h3>
+              <h3 id="uploading-data">Uploading Data</h3>
+
+              <h4 id="raw-data">Using Raw Data</h4>
 
               <div class="accordion accordion-light" id="accordion-4">
 
                 <div class="card">
                   <p class="card-title">
-                    <a class="collapsed" data-toggle="collapse" href="#collapse-4"><span class="badge badge-pale badge-info">Using the template</span> Click here for more information using the template →</a>
+                    <a class="collapsed" data-toggle="collapse" href="#collapse-4"><span class="badge badge-pale badge-info">Using the template</span> Although we recommend using the Upload Wizard directly, you may wish to upload the data directly in its raw format. →</a>
                   </p>
 
                   <div id="collapse-4" class="collapse" data-parent="#accordion-4">
                     <div class="card-body">
-                      <p>You're given a range of options within the Onboarding Wizard. One of these is to "Download Template". Click this to download the template.
+                      <p>Once the data is in the correct format, you can click "Upload Raw Data" to upload the data. Please note, this will delay the processing time of the data.
                         <div class="text-center my-6">
-                          <img class="rounded-md" src="../assets/img/guide/using-the-template/using-the-template-01.png" alt="...">
-                          <figcaption class="figure-caption text-center"></figcaption>
-                        </div>
-                      <p>When you click to download the template, you will see a modal pop-up with Key Data and Location Data which you can then use to complete the Admin section of the template.
-                        <div class="text-center my-6">
-                          <img class="rounded-md" src="../assets/img/guide/using-the-template/using-the-template-02.png" alt="...">
-                          <figcaption class="figure-caption text-center"></figcaption>
-                        </div>
-                      <p>Add the relevant data into the Admin Section of the template (Step 1), and then complete the specific data (Step 2).
-                      <p>Once the data is completed, you can click "Upload Raw Data" to upload the data.
-                        <div class="text-center my-6">
-                          <img class="rounded-md" src="../assets/img/guide/using-the-template/using-the-template-03.png" alt="...">
+                          <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-raw-data-upload.png" alt="...">
                           <figcaption class="figure-caption text-center"></figcaption>
                         </div>
                       <p>We'll do the rest from here, and we'll be in touch if we have any questions regarding the data.
@@ -147,86 +157,129 @@
 
               </div>
 
-              <p>
-
               <br>
 
+              <h4 id="import-data" data-provide="anchor">Using the Upload Wizard</h4>
+
+                <p>When you click to begin your task, you'll see the onboarding panel.</p>
+                <p>Click <span class="badge badge-primary">Start Upload</span> to upload your file</p>
+
+                  <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-01.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                  </div>
 
 
-
-                  <h4 id="extended-license" data-provide="anchor">What to include in the Expense data upload</h4>
-                  <p>Regardless of whether you use the template, or simply upload raw export data, this guide will walk you through the information we require from the expenses:</p>
-                  <p>
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th>Category</th>
-                            <th>Description</th>
-                            <th>Required</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Reference</th>
-                            <td>A unique identifier generated by your expense system, such as "2023_00001"</td>
-                            <td>Yes</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Date</th>
-                            <td>The specific date on which the transaction occurred.</td>
-                            <td>Yes</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Description</th>
-                            <td>A top level, clear and concise written description of the item or expense, for example, "lunch at Pizza Express for 4 people."</td>
-                            <td>Yes</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Category 1</th>
-                            <td>The primary or top-level categorization, often corresponding to the Nominal Code name, used to classify the expense.</td>
-                            <td>Yes</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Category 2</th>
-                            <td>An additional categorization or supplementary information, which can include details like the supplier's name or a subcategory.</td>
-                            <td>Optional</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Spend (GBP)</th>
-                            <td> The total cost of the transaction, which can be either a positive or negative value and should encompass all expenses, including any Value Added Tax (VAT) if applicable.</td>
-                            <td>Yes</td>
-                          </tr>
-
-                        </tbody>
-                      </table>
-
-
-                  </p>
-
-                  <p>In some cases, you may wish to include the following categories for more information:
+                  <h4 id="">Step 1: Pre-import setup</h4>
+                  <p>Check your data contains the correct headers and is for the correct Reporting Period<p>
+                    <p>The platform supports the following file formats for uploading:
                     <ul>
-                      <li><b>Currency:</b> The currency e.g. USD, GBP, EUR - we will assume GBP unless otherwise told.</li>
-                    </ul>
-                  </p>
-
-                  <p>Finally, depending on the detail of your expenses, the following special categories can be used to split the end carbon emissions further:
-                    <ul>
-                      <li><b>Location ID:</b> If expenses are associated with specific locations, please provide the Location ID as obtained from the template download step.</li>
-                      <li><b>Department Code:</b> Typically, this represents your cost center, such as Sales Team or HR, indicating the department or team responsible for the expense.</li>
-                      <li><b>Project Code:</b> If applicable, this code helps categorize expenses related to specific client projects, facilitating project-based accounting and tracking.</li>
-                    </ul>
-                  </p>
-
-
+                    <li>CSV (Comma-Separated Values)</li>
+                    <li>XLSX (Microsoft Excel)</li>
                   </ul>
-                  </p>
 
-                  <p>As an example, the data might look like this:
-                    <div class="text-center my-6">
-                      <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-02.png" alt="...">
-                      <figcaption class="figure-caption text-center"></figcaption>
-                    </div>
+                  <p>To download a file template click <span class="badge badge-light">Download Template</span>
 
+                  <p>Or to download an example of the data use the "Click here to download an example of how the supply chain template should be filled out" link
+
+                  <p>When you're ready to proceed, please click <span class="badge badge-primary">Next</span></p>
+
+                  <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/finance/guide-expenditure-step-1.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                  </div>
+
+                  <h4 id="">Step 2: Upload Your Document</h4>
+                  <p>Please upload your data file - you can drag and drop the file or click the button to add your file.<p>
+                  <p>Once added, you'll see the filename in the upload box.<p>
+                  <p>Use the dropdown menu to select which locations the data is associated to.<p>
+                  <p>Once uploaded, click <span class="badge badge-primary">Next</span>.</p>
+
+
+                  <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/finance/guide-expenditure-step-2.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                  <h4 id="">Step 3: Map header columns</h4>
+                  <p>Match the column types to the correct header columns in your file. </p>
+                  <p>If you want to include the Asset Reference column, please tick the box.</p>
+                    <p>Once you have mapped all the columns, please click <span class="badge badge-primary">Next</span></p>
+
+
+                  <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/finance/guide-expenditure-step-3.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                  <h4 id="">Step 4: Review Data</h4>
+                  <p>The platform will automatically validate your file to ensure all required columns are included and formatted correctly.</p>
+                  <p>You will have to go back and re-upload your file if there are errors, but the platform will tell you the cause of these errors and where they are in your file to make it easy to correct them.</p>
+                  <p>You can see the most common errors with data uploads here: <a href="#troubleshooting">Troubleshooting Common Errors</a> <p>
+                  <p>Click <span class="badge badge-primary">Import</span> when you're ready</p>
+
+
+                  <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/finance/guide-expenditure-step-4.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                  <h4 id="">Step 5: Data Import Complete</h4>
+                  <p>The results of your import will show.</p>
+                  <p>Any duplicate data will not be uploaded.</p>
+                  <p>Click <span class="badge badge-primary">Finish</span> to close the import wizard.</p>
+
+                  <p>The Recent Uploads table shows you the Status of your data:<p>
+
+                    <ul>
+                    <li><b>Unverified</b>: Indicates that data has been uploaded as a raw file and will need to be processed by the Alectro team manually.
+                    <li><b>Queued</b>: Indicates data has successfully been imported and is in the queue to be processed.</li>
+                    <li><b>Underway</b>: Indicates data anaylis has been started on the uploaded data</li>
+                    <li><b>Complete</b>: Indicates data analysis is completed and the results will show in the platform</li>
+                  </ul>
+
+
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/finance/guide-expenditure-step-5.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <h4 id="">What happens next?</h4>
+                <p>Once all locations are completed, you can mark the whole section as complete by clicking <span class="badge badge-primary">Mark as Complete</span></p>
+
+                <div class="text-center my-6">
+                  <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-completed.png" alt="...">
+                  <figcaption class="figure-caption text-center"></figcaption>
+                </div>
+
+                <p>The section will complete, and you can go back to your to-do list if you have other items to complete, else your work is done!
+
+                <p>Your to-do list will now have a completed message in it.
+
+
+              <div class="text-center my-6">
+                <img class="rounded-md" src="../assets/img/guide/finance/guide-expenses-to-do-completed.png" alt="...">
+                <figcaption class="figure-caption text-center"></figcaption>
+              </div>
+
+
+                    <h3 id="troubleshooting">Troubleshooting Common Errors</h3>
+
+
+                    <p>Before uploading your document, ensure that it includes the following required columns:</p>
+                    <p>
+                      <ul>
+                      <li><b>Missing Columns:</b>  Ensure your file contains the required columns.</li>
+                      <li><b>Incorrect File Format:</b>  Verify your file is saved in CSV or XLSX format.</li>
+                      <li><b>Validation Issues:</b>  Check for typos or inconsistencies in your data, such as blank fields or incorrect data formats.</li>
+                      <li><b>Data Formatting:</b>  The data must be in the correct format to upload - please ensure that each column is in its correct format. </li>
+                      <ul>
+                        <li><b>Purchase Data</b>: Ensure this column is in a date format upon upload - we suggest YYYY/MM/DD to ensure consistency </u></li>
+                        <li><b>Spend</b>: This must be a number and not include currency symbols</u></li>
+                        <li><b>Expense Reference</b>: If this is not a unique reference it may cause issued with the duplicate removal process </u></li>
+                        <li><b>Location ID: </b>The Location ID can be obtained from the template download step and must be one of the company specific IDs.</li>
+                      </ul>
 
 
 
@@ -234,13 +287,11 @@
 
               <h3 id="faq">Frequently Asked Questions</h3>
 
-
-                  <h6 id="regular-license" data-provide="anchor">What if I don't know the data?</h6>
-                  <p>Expense data is crucial for the analysis to take place. Without spend data, there is no way to quantify the material impact of the company over the year. That being said, there is also no way to do traditional financial accounting without this spend data being tracked! Therefore, every single organisation needs this data for accounting purposes, and so it should be available within the company.</p>
-
-                  <br>
-                  <h6 id="regular-license" data-provide="anchor">What data should be included?</h6>
-                  <p>At a top level, anything that the business spends during the year could contribute to the carbon impact. However, items like taxes, payroll, bank fees, revaluations, and depreciations can be exluded.</p>
+              <h6 id="regular-license" data-provide="anchor">What if I don't know the data?</h6>
+              <p>Expense data is crucial for the analysis to take place. Without spend data, there is no way to quantify the material impact of the company over the year. That being said, there is also no way to do traditional financial accounting without this spend data being tracked! Therefore, every single organisation needs this data for accounting purposes, and so it should be available within the company.<br>
+              <br>
+              <h6 id="regular-license" data-provide="anchor">What data should be included?</h6>
+              <p>At a top level, anything that the business spends during the year could contribute to the carbon impact. However, items like taxes, payroll, bank fees, revaluations, and depreciations can be exluded.</p>
 
 
 
@@ -262,8 +313,11 @@
                 <!-- <a class="nav-link" href="#top">Back to top</a> -->
                 <a class="nav-link" href="#getting-started">Getting Started</a>
                 <a class="nav-link" href="#finding-data">Finding and Requesting Data</a>
-                <a class="nav-link" href="#template">Completing Data Template</a>
-                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link" href="#uploading-data">Uploading Data</a>
+                <a class="nav-link ml-3" href="#raw-data">Using Raw Data</a>
+                <a class="nav-link ml-3" href="#import-data">Using the Upload Wizard</a>
+                <a class="nav-link" href="#troubleshooting">Troubleshooting Common Errors</a>
+                <a class="nav-link" href="#faq">Frequently Asked Questions</a>
               </nav>
             </aside>
           </div>
@@ -319,7 +373,7 @@
           </div>
 
           <div class="col-md-3 text-center text-md-left">
-            <small>© 2024 Alectro Limited. All rights reserved.</small>
+            <small>© 2025 Alectro Limited. All rights reserved.</small>
           </div>
 
           <div class="col-md-9 text-center text-md-right">
