@@ -14,7 +14,7 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-    <link rel="icon" href="../assets/img/favicon.png">
+    <link rel="icon" href="../assets/img/favicon_2022.png">
 
     <!--  Open Graph Tags -->
     <meta property="og:title" content="alectro.io">
@@ -80,17 +80,27 @@
             <article>
 
               <h3 id="getting-started">Getting Started</h3>
-                  <p>
-                    You have been selected as the data holder for Cloud Computing data. As such, we need you to download the relevant impact data, so that we can analyse the data.</p>
-                    <p>This guide will help you to complete the data into the format needed to build this part of the company impact.
-                  </p>
+                  <p>You've been assigned as the data holder for Cloud Computing, which covers the impact of the company's cloud infrastructure from services like AWS, Azure, or GCP.
+                  <p>Due to complications in accessing this data, the method for providing the correct information varies by provider.
+                  <p>For this section, we are referring to Infrastructure-as-a-Service (IaaS) rather than consumer-facing services like websites, SharePoint, or Google Drive. The impact of smaller-scale items like these is negligible and considered immaterial to the overall cloud impact.</p>
+                  <p>This guide will help you format the data correctly to build this part of the company's impact assessment. </p>
+                  <p>You'll see the following task in your to-do list here: <a href="https://vso.alectro.io/todo-list" target="_blank">vso.alectro.io/todo-list</a></p>
+
+                  <div class="text-center my-6">
+                    <img class="rounded-md" src="../assets/img/guide/cloud-computing/guide-cloud-to-do.png" alt="...">
+                    <figcaption class="figure-caption text-center"></figcaption>
+                  </div>
+              </p>
 
               <hr class="my-8">
 
               <h3 id="finding-data">Finding and Requesting Data</h3>
-              <p>Typically most data can be downloaded directly from your cloud provider. The most important information is monthly uptime, and location of the servers.</p>
-              <p>We are referring to Infrastructure-as-a-Service (IaaS) rather than consumer items like a website, Sharepoint, or Google Drive etc. </p>
-
+              <p>Data can be downloaded directly from your cloud provider:
+              <ul>
+                <li>For Azure and GCP, this information can be accessed directly through the tools they provide for reporting GHG Protocol Scope 1-3 data.</li>
+                <li>For other providers, including AWS, a raw data approach is required.</li>
+              </ul>
+              <p>The most critical factors in determining impact are monthly uptime and the geographical region of the cloud servers.</p>
                 <p>We've listed how to export this data here:</p>
 
 
@@ -105,47 +115,31 @@
 
                               <div id="collapse-job-1" class="collapse" data-parent="#accordion-job">
                                 <div class="card-body">
-                                  <p>You can access the uptime from your AWS services by following the steps below:</p>
+                                  <p>You can access the from your AWS services by following the steps below:</p>
                                   <ol>
-                                    <li>Go to <a href="https://signin.aws.amazon.com/" target="_blank">https://signin.aws.amazon.com/</a> to sign in to your AWS account</li>
-                                    <a href="../assets/img/guide/cloud-computing/1-cloud-computing.png" data-provide="lightbox">
-                                      <figure class="figure">
-                                    <img src="../assets/img/guide/cloud-computing/1-cloud-computing.png" class="figure-img img-fluid shadow-9 rounded-l" alt="...">
-                                      <figcaption class="figure-caption text-center">Click to enlarge</figcaption>
-                                    </a>
-
-                                    <li>Go to AWS Cost Management > Reports
-
-                                      <ol>
-                                        <li>Click <code>Create a new report</code></li>
-                                        <li>Click <code>Cost and usage</code></li>
-                                      </ol>
+                                    <li>Go to AWS Cost Management > Cost Explorer > <b>New cost and usage report</b></li>
+                                    <li><b>Apply the following filters:</b>
+                                        <ol>
+                                          <li>For the date range, choose the Reporting Period Year (or as much of it as you are able to select if you cannot go back all the way)</li>
+                                          <li>Granularity: Set to Monthly</li>
+                                          <li>Dimension: Choose Region</li>
+                                        </ol>
                                     </li>
-
-                                      <a href="../assets/img/guide/cloud-computing/2-cloud-computing.png" data-provide="lightbox">
-                                        <figure class="figure">
-                                      <img src="../assets/img/guide/cloud-computing/2-cloud-computing.png" class="figure-img img-fluid shadow-9 rounded-l" alt="...">
-                                        <figcaption class="figure-caption text-center">Click to enlarge</figcaption>
-                                      </a>
-
-                                      <li>Select the right settings settings:<br>
-                                          - Select the date period from the dropdown<br>
-                                          - Group by the region<br>
-                                          - Usage type: type (Hrs) and <codE>Select All</code><br>
-
+                                    <li>Then for <b>each of the following combinations</b>, you can download a CSV of the data:
+                                      <ol>
+                                        <li>For Compute, you need to filter the Usage type group to EC2: Running Hours</li>
+                                        <li>For Storage, you need to filter to S3: Storage - Standard</li>
+                                        <li>For RDS, you need to filter to RDS: Running hours</li>
+                                        <li>For Networking, you need to filter to give each type of Data Transfer  - xxx (In) / Data Transfer  - xxx (Out). You can add all of these in one go.</li>
+                                      </ol>
                                       </li>
-                                            <a href="../assets/img/guide/cloud-computing/3-cloud-computing.png" data-provide="lightbox">
-                                              <figure class="figure">
-                                            <img src="../assets/img/guide/cloud-computing/3-cloud-computing.png" class="figure-img img-fluid shadow-9 rounded-l" alt="...">
-                                              <figcaption class="figure-caption text-center">Click to enlarge</figcaption>
-                                            </a>
+                                    <p>You should see two graphs (as shown in the screenshot)—one displaying cost and the other showing usage. </p>
+                                    <div class="text-center my-6">
+                                      <img class="rounded-md" src="../assets/img/guide/cloud-computing/guide-cloud-aws.png" alt="...">
+                                      <figcaption class="figure-caption text-center"></figcaption>
+                                    </div>
 
-                                            <li>Click <code>Download CSV</code> to download the data, and send it over to us!<br>
-                                              This will give you a download of each months cloud computing use, split by region, for the period of analysis.
-
-                                            </li>
-
-
+                                      <p>Click <code>Download CSV</code> to download the data, and <b>upload the data, or send it over to us!</b><br>This will give you a download of each months cloud computing use, split by region, for the period of analysis.
 
                                   <hr class="w-100px">
 
@@ -164,14 +158,8 @@
 
                               <div id="collapse-job-2" class="collapse" data-parent="#accordion-job">
                                 <div class="card-body">
-                                  <p>You can follow the instructions in this article to<a href="https://medium.com/google-cloud/google-cloud-export-billing-data-to-csv-6fc2543dc39a" target="_blank"> export the raw data from the monthly invoices</a></span> - this will give us detailed information so we can get more accurate data on a monthly basis.
-                                  <p>To do this:
-                                    <ol>
-                                      <li>Open the Google Cloud console navigation menu</li>
-                                      <li>Select Billing. Go to “Billing → Cost Table”. The cost table shows an itemized view of your billing information. </li>
-                                      <li>The filters allow you to select the Invoice month, and you can download the details by clicking the Download CSV button (down arrow pointing to a line next to the project title and the date period)</li>
-                                    </ol>
-
+                                  <p>The Carbon Footprint dashboard displays estimated greenhouse gas emissions associated with the usage of covered Google Cloud services for the selected billing account. You can follow instructions <a href="https://cloud.google.com/carbon-footprint/docs/view-carbon-data" target="_blank"> to view and export the data from the dashboard</a>.
+                                  <p>You should export the data from the Market-based emissions tab: This tab displays emissions data broken down by scope 1, scope 2 market-based, and scope 3 GHG emissions.
                                   </p>
 
                                 </div>
@@ -188,161 +176,53 @@
 
                               <div id="collapse-job-3" class="collapse" data-parent="#accordion-job">
                                 <div class="card-body">
-                                  <p><p>You can follow the instructions in this article to <a href="https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/download-azure-daily-usage" target="_blank">export the raw data from the monthly invoices</a></span> - this will give us detailed information so we can get more accurate data on a monthly basis.
-                                
+                                  <p>You can export your emissions data in CSV format from the Emissions Trends page and the Emissions Details page in Azure carbon optimization in the Azure portal.
+                                  <p>You can follow the instructions here: <a href="https://learn.microsoft.com/en-us/azure/carbon-optimization/export-data?tabs=CSV" target="_blank">Export emissions data to a CSV file using the Azure portal</a> - this will give us detailed information so we can get more accurate data on a monthly basis.
+
+                                    <div class="text-center my-6">
+                                      <img class="rounded-md" src="../assets/img/guide/cloud-computing/guide-cloud-azure.png" alt="...">
+                                      <figcaption class="figure-caption text-center"></figcaption>
+                                    </div>
+
+                                  <p>This will help you to download the <b>Emissions Trends</b> data that includes the last 12 month's data for the selected filters, including:
+                                      <ul>
+                                          <li>Scope 1, 2, 3 and total emissions</li>
+                                          <li>Carbon intensity</li>
+                                      </ul>
+                                    </p>
+                                  <p>Download the data, and <b>upload or send it over to us!</b></p>
+
                                 </div>
                               </div>
                             </div>
 
-
-                            <!-- <div class="card">
-                              <h6 class="card-title">
-                                <a class="d-flex align-items-center collapsed" data-toggle="collapse" href="#collapse-job-2">
-                                  <strong class="mr-auto">Sage</strong>
-
-                                </a>
-                              </h6>
-
-                              <div id="collapse-job-2" class="collapse" data-parent="#accordion-job">
-                                <div class="card-body">
-                                  <p>Add steps here</p>
-                                  <ol>
-                                    <li>Go here</li>
-                                    <li>Do this</li>
-                                    <li>add this</li>
-                                    <li>click here</li>
-                                  </ol>
-
-                                  <hr class="w-100px">
-
-                                  <p class="text-center"><a class="btn btn-lg btn-primary" href="../page/career-single.html">Read more here</a></p>
-                                </div>
-                              </div>
-                            </div> -->
-
-
-                            <!-- <div class="card">
-                              <h6 class="card-title">
-                                <a class="d-flex align-items-center collapsed" data-toggle="collapse" href="#collapse-job-3">
-                                  <strong class="mr-auto">Pleo</strong>
-
-                                </a>
-                              </h6>
-
-                              <div id="collapse-job-3" class="collapse" data-parent="#accordion-job">
-                                <div class="card-body">
-                                  <p>Add steps here</p>
-                                  <ol>
-                                    <li>Go here</li>
-                                    <li>Do this</li>
-                                    <li>add this</li>
-                                    <li>click here</li>
-                                  </ol>
-
-                                  <hr class="w-100px">
-
-                                  <p class="text-center"><a class="btn btn-lg btn-primary" href="../page/career-single.html">Read more here</a></p>
-                                </div>
-                              </div>
-                            </div> -->
-
-
-                            <!-- <div class="card">
+                            <div class="card">
                               <h6 class="card-title">
                                 <a class="d-flex align-items-center collapsed" data-toggle="collapse" href="#collapse-job-4">
-                                  <strong class="mr-auto">SOMETHING ELSE</strong>
 
+                                  <strong class="mr-auto">Other Suppliers</strong>
                                 </a>
                               </h6>
 
                               <div id="collapse-job-4" class="collapse" data-parent="#accordion-job">
                                 <div class="card-body">
-                                  <p>Add steps here</p>
-                                  <ol>
-                                    <li>Go here</li>
-                                    <li>Do this</li>
-                                    <li>add this</li>
-                                    <li>click here</li>
-                                  </ol>
-
-                                  <hr class="w-100px">
-
-                                  <p class="text-center"><a class="btn btn-lg btn-primary" href="../page/career-single.html">Read more here</a></p>
+                                  <p>If you're using a different cloud provider, please reach out, and we'll assist you in finding the most relevant information for your specific use case.</p>
                                 </div>
                               </div>
-                            </div> -->
+                            </div>
+
+
 
 
                           </div>
-
-
-
-
-
-
-              <hr class="my-8">
-
-              <h3 id="template">Completing Data Template</h3>
-
-              <!-- <div class="text-center my-6">
-                <a href="../assets/img/guide/facilities.png" data-provide="lightbox">
-                  <img class="rounded-md" src="../assets/img/guide/facilities.png" alt="">
-
-                  </a>
-                <footer>The Expense Template</footer>
-              </div> -->
-
-
-                  <br>
-                  <h4 id="regular-license" data-provide="anchor">Admin Data</h4>
-                  <p>The orange panel on the left hand side of the sheet gives you all your admin data. </p>
-                  <h5>Admin Data</h5>
-                  <p>
-                    <ul>
-                    <li><b>Basic Data: </b>This is the company name and the period of data analysis</li>
-
-                  </ul>
-                  </p>
-                  <h5>Progress Data</h5>
-                  <p>
-                    <ul>
-                    <li><b>Completed By: </b>Once this data has been completed, add your email and completion data so that we can ask any questions upon verfication.</li>
-                  </ul>
-                  </p>
-
-                  <h5>Service Provider   Data</h5>
-                  <p>
-                    <ul>
-                    <li><b>Cloud Computing Provider: </b>Please use the dropdowns to select which cloud computing provider the company uses. Typically this is one of <code>AWS</code> (Amazon Web services), <code>GCP</code> (Google Cloud Compute), <code>Azure</code> (Microsoft Azure). It may also be another such as Rackspace, AliCloud, or IBM, but these are rarer. Please enter the provider name next to this box if it is categorised as <code>Other</code>. </li>
-                  </ul>
-                  </p>
-                <br>
-
-
-                  <h4 id="extended-license" data-provide="anchor">Uptime Data</h4>
-                  <p>For each provider, we need data on the location and the uptime:</p>
-                  This information is available as a direct download from the admin console of your cloud provider.
-                  <p><ul>
-                    <li><b>Server Location:</b> this is the region that the server is located. This is important because different regions use electricity provided by different methods, and this has a significant impact on the overall intensity of these services.
-                      <br>- For <code>AWS</code> this will be similar to us-east-2, us-east-1, eu-west-1, or eu-west-2
-                      <br>- For <code>GCP</code> this will be similar to europe-north1, europe-west1, europe-west2, northamerica-northeast1, us-central1, or us-west1
-                      <br>- For <code>Azure</code> this will be similar to centralus, northeurope, westeurope, westus2, francesouth
-                    </li>
-                    <li><b>Monthly Uptime:</b> This the the number of hours that the infrastructure is running per month during the period of analysis</li>
-
-                  </ul>
-                  </p>
-
-
-
 
               <hr class="my-8">
 
               <h3 id="faq">Frequently Asked Questions</h3>
 
                   <br>
-                  <h6 id="regular-license" data-provide="anchor">What if my provider allows me to export the impact data directly?</h6>
-                  <p>Recently, several providers have provided the ability to export Cloud Footprint data directly. If this is the case, then please provide this directly.</p>
+                  <h6 id="regular-license" data-provide="anchor">I cannot access any of the data—what should I do?</h6>
+                  <p>If you're unable to access the data, please reach out to us, and we will help arrange the best alternative solution.</p>
 
 
 
@@ -364,7 +244,6 @@
                 <!-- <a class="nav-link" href="#top">Back to top</a> -->
                 <a class="nav-link" href="#getting-started">Getting Started</a>
                 <a class="nav-link" href="#finding-data">Finding and Requesting Data</a>
-                <a class="nav-link" href="#template">Completing Data Template</a>
                 <a class="nav-link" href="#faq">FAQ</a>
               </nav>
             </aside>
